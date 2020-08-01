@@ -30,8 +30,7 @@ theme:
     nav_style: dark
     favicon: /assets/img/favicon.ico
     icon:
-        logo: /assets/img/tips
-        repo: fontawesome/brands/git-alt
+        logo: material/school
     language: en
     highlightjs: true
     # features:
