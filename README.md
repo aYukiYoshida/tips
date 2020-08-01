@@ -1,6 +1,14 @@
 # TIPS
 
-## MkDocs
+## Environments
+
+* Install python package
+    ```bash
+    % python -m pip install -r requirements.txt
+    ```
+
+
+## for MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
