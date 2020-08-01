@@ -16,6 +16,7 @@
     "vuepress-plugin-mathjax": "^1.2.8"
   },
   "dependencies": {
+    "push-dir": "^0.4.1",
     "vuepress-plugin-latex": "^0.1.3"
   }
 }
