@@ -2,7 +2,7 @@
 
 ## Environments
 
-* [環境構築](/python/setup)
+* [環境構築](./setup)
 
 ## [matplotlib](https://matplotlib.org/)
 
