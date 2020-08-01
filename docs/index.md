@@ -2,11 +2,13 @@
 
 This is my yummy tips
 
-## CONTENTS
+<div align="center">
+<a href="https://www.mcdonalds.co.jp">
+<img src="/assets/img/tips.png" width="50%" hspace="10px" vspace="10px"/>
+</a>
+</div>
 
-* **[STATISTICS](/statistics)**
-* **[Python](/python)**
-* **[LaTeX](/latex)**
-* **[NLP](/nlp)**
+## INFORMATION
 
+* [Repository](https://github.com/aYukiYoshida/tips/)
 

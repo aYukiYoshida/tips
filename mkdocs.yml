@@ -5,7 +5,6 @@ repo_url: https://github.com/aYukiYoshida/tips
 nav:
     - TOP: index.md
     - STATISTICS: 
-        - INDEX: statistics/index.md
         - descriptive statistics: statistics/descriptive_statistics.md
         - outlie: statistics/outlie.md
         - significance: statistics/significance.md
@@ -15,13 +14,10 @@ nav:
             - Bayesian estimation: statistics/bayesian/bayesian_estimation.md
             - Bayesian statistics: statistics/bayesian/bayesian_statistics.md
     - NLP:
-        - INDEX: nlp/index.md
         - How to install tools: nlp/install_tools.md
     - Python:
-        - INDEX: python/index.md
         - Setup : python/setup.md
     - LaTeX:
-        - INDEX: latex/index.md
         - Horizontal line in LaTeX: latex/dash.md
         - Make LaTeX formulas online images: latex/online_equation.md
     
