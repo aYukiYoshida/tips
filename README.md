@@ -1,17 +1,24 @@
-# tips
+# TIPS
 
-My yummy tips
+## MkDocs
 
+For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## development
+### Commands
 
-```shellscript
-% yarn docs:dev
-% yarn docs:build
-```
+* `mkdocs new [dir-name]` - Create a new project.
+* `mkdocs serve` - Start the live-reloading docs server.
+* `mkdocs build` - Build the documentation site.
+* `mkdocs gh-deploy` - Deploy the built documentation site on Github Pages.
+* `mkdocs -h` - Print help message and exit.
 
-## reference
+### Project layout
 
-* [markdownだけでWebページを作成して公開するまで - Qiita](https://qiita.com/ozaki25/items/a1988b01f83f6616b7f9)
-* [vuepress で mathjax で数式を使うメモ - Qiita](https://qiita.com/syoyo/items/9f7dce2574e685a09bfa)
-* [VuePressで作成した静的サイトをGitHub Pagesで公開する](https://qiita.com/rubytomato@github/items/f8153f0d00f89ba87ed5)
+    mkdocs.yml    # The configuration file.
+    docs/
+        index.md  # The documentation homepage.
+        ...       # Other markdown pages, images and other files.
+
+### Reference (Non official)
+
+* [MkDocsによるドキュメント作成 - Qiita](https://qiita.com/mebiusbox2/items/a61d42878266af969e3c)

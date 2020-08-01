@@ -1,0 +1,66 @@
+site_name: TIPS
+site_description: This is my yummy tips
+site_author: aYukiYoshida
+repo_url: https://github.com/aYukiYoshida/tips
+nav:
+    - TOP: index.md
+    - STATISTICS: 
+        - INDEX: statistics/index.md
+        - descriptive statistics: statistics/descriptive_statistics.md
+        - outlie: statistics/outlie.md
+        - significance: statistics/significance.md
+        - statistical hypothesis: statistics/statistical_hypothesis.md   
+        - Bayesian:
+            - INDEX: statistics/bayesian/index.md
+            - Bayesian estimation: statistics/bayesian/bayesian_estimation.md
+            - Bayesian statistics: statistics/bayesian/bayesian_statistics.md
+    - NLP:
+        - INDEX: nlp/index.md
+        - How to install tools: nlp/install_tools.md
+    - Python:
+        - INDEX: python/index.md
+        - Setup : python/setup.md
+    - LaTeX:
+        - INDEX: latex/index.md
+        - Horizontal line in LaTeX: latex/dash.md
+        - Make LaTeX formulas online images: latex/online_equation.md
+    
+theme:
+    name: material
+    nav_style: dark
+    favicon: /assets/img/favicon.ico
+    icon:
+        logo: /assets/img/tips
+        repo: fontawesome/brands/git-alt
+    language: en
+    highlightjs: true
+    # features:
+    #     tabs
+
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+        toc_depth: 3
+    - sane_lists
+    - codehilite:
+        # linenums: true
+    - pymdownx.arithmatex:
+        generic: true
+    - pymdownx.superfences
+    - admonition
+    - def_list
+
+extra_javascript:
+    # - javascripts/config.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+    - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "https://fonts.googleapis.com/css?family=Open+Sans:600,800"
+    - "css/custom.css"
+    
+plugins:
+    - search:
+        separator: '[\s\-\.]+'

@@ -1,9 +1,3 @@
----
-mathjax:
-  presets: '\def\lr#1#2#3{\left#1#2\right#3}'
-sidebarDepth: 2
----
-
 # ベイズ統計
 
 ベイズ統計学とは、ベイズの定理を基礎とした統計学の体系

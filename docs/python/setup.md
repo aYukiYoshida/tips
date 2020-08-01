@@ -1,7 +1,3 @@
----
-sidebarDepth: 2
----
-
 # Python環境構築
 
 ## pyenv
@@ -19,13 +15,13 @@ pyenv-installerを使用するには、`git`が必要なので、事前にイン
     ```shellscript
     % curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
     ```
-1. 環境設定
+3. 環境設定  
 各shellのprofile(`$SHELL=/.../bash`の場合は、 `$HOME/.bashrc`, `$SHELL=/.../zsh`の場合は、 `$HOME/.zshrc`, `csh`,`tcsh`,`ksh`, etcはそれぞれ対応するファイル)に以下を追記する。
     ```
-    export PYENVSYS=$HOME/.pyenv
-    export PATH=${PYENVSYS}/bin:$PATH
-    eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
+    export PYENVSYS=$HOME/.pyenv  
+    export PATH=${PYENVSYS}/bin:$PATH  
+    eval "$(pyenv init -)"  
+    eval "$(pyenv virtualenv-init -)"  
     ```
 
 ### `pyenv` での python環境のインストール
@@ -51,16 +47,12 @@ pyenv-installerを使用するには、`git`が必要なので、事前にイン
 
 ### install jupyter
 
-1. jupyter のインストール
-    ```
-    % pip install jupyter
-    ```
+1. jupyter のインストール  
+    `% pip install jupyter`
 1. 起動
-    ```
-    % jupyter notebook
-    ```
+    `% jupyter notebook`
     ブラウザが起動して、以下のような画面が表示されればOK
-    <img src="./assets/jupyter.png" width="100%"/>
+    <img src="/assets/python/jupyter.png" width="100%"/>
 
 
 ### install jupyterlab
