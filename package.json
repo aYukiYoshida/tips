@@ -9,6 +9,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "docs:deploy": "push-dir --dir=./docs/.vuepress/dist --branch=page --cleanup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
