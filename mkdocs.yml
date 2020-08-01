@@ -20,7 +20,11 @@ nav:
     - LaTeX:
         - Horizontal line in LaTeX: latex/dash.md
         - Make LaTeX formulas online images: latex/online_equation.md
-    
+    - English:
+        - english/one_that.md
+        - english/just_remenber.md
+        - english/adverb.md
+        - english/conjunction.md
 theme:
     name: material
     nav_style: dark
