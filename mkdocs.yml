@@ -9,7 +9,8 @@ nav:
         - outlie: statistics/outlie.md
         - significance: statistics/significance.md
         - statistical hypothesis: statistics/statistical_hypothesis.md   
-        - statistics/ftest.md  
+        - statistics/ftest.md
+        - statistics/run_test.md
         - Bayesian:
             - INDEX: statistics/bayesian/index.md
             - Bayesian estimation: statistics/bayesian/bayesian_estimation.md
