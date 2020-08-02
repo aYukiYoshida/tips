@@ -19,7 +19,7 @@
     
     
       
-        <title>statistical hypothesis - TIPS</title>
+        <title>F-test - TIPS</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#f-test" class="md-skip">
           Skip to content
         </a>
       
@@ -87,7 +87,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              statistical hypothesis
+              F-test
             
           </span>
         </div>
@@ -260,6 +260,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../statistical_hypothesis/" title="statistical hypothesis" class="md-nav__link">
+      statistical hypothesis
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -271,14 +283,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        statistical hypothesis
+        F-test
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="statistical hypothesis" class="md-nav__link md-nav__link--active">
-      statistical hypothesis
+    <a href="./" title="F-test" class="md-nav__link md-nav__link--active">
+      F-test
     </a>
     
       
@@ -297,30 +309,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    一般にいう仮説の例
+  <a href="#xspecf-test" class="md-nav__link">
+    XspecのF-test
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    統計学でいう仮説の例
-  </a>
-  
-    <nav class="md-nav" aria-label="統計学でいう仮説の例">
+    <nav class="md-nav" aria-label="XspecのF-test">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    問題(1)の帰無仮説と対立仮説
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    問題(2)の帰無仮説と対立仮説
+  <a href="#reference" class="md-nav__link">
+    Reference
   </a>
   
 </li>
@@ -334,18 +332,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ftest/" title="F-test" class="md-nav__link">
-      F-test
-    </a>
   </li>
 
         
@@ -674,30 +660,16 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    一般にいう仮説の例
+  <a href="#xspecf-test" class="md-nav__link">
+    XspecのF-test
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    統計学でいう仮説の例
-  </a>
-  
-    <nav class="md-nav" aria-label="統計学でいう仮説の例">
+    <nav class="md-nav" aria-label="XspecのF-test">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    問題(1)の帰無仮説と対立仮説
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    問題(2)の帰無仮説と対立仮説
+  <a href="#reference" class="md-nav__link">
+    Reference
   </a>
   
 </li>
@@ -719,7 +691,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/aYukiYoshida/tips/edit/master/docs/statistics/statistical_hypothesis.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/aYukiYoshida/tips/edit/master/docs/statistics/ftest.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -727,39 +699,25 @@
                   
                 
                 
-                <h1 id="_1">統計的仮説<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>自然科学において仮説を検証することは研究者の作業であり、仮説が正しいと主張できることこそが目的でもある。心理学では、まさに仮説を検証するためにデータをとり、正しいと主張するためにデータ解析を行う。つまり、統計学を道具として扱うということである、しかし、一般にいう仮説と、統計学でいう仮説とは少し違うことを知っておかなければない.</p>
-<p>一般にいう仮説とは「xxxであるに違いない」「xxxであるということが正しい」「xxxであるべきだ」といったようなものになる。つまり、最終的にその仮説が採択される(仮説が正しいとされる)ことが望ましいというような仮説を立てることになる。</p>
-<h2 id="_2">一般にいう仮説の例<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+                <h1 id="f-test">F-test<a class="headerlink" href="#f-test" title="Permanent link">&para;</a></h1>
+<h2 id="xspecf-test">XspecのF-test<a class="headerlink" href="#xspecf-test" title="Permanent link">&para;</a></h2>
+<p>例えば<br />
+モデル1: <code>phabs*powerlaw</code><br />
+モデル2: <code>phabs*powerlaw+gaussian</code><br />
+に対してモデル2中の <code>gaussian</code> の有意性のF検定をする。</p>
+<p><strong><code>Xspec</code>のF-testにおける帰無仮説</strong> : 「加えた成分(<code>gaussian</code>)の係数が0である。」<br />
+この仮説のためにはモデル1とモデル2が nest の関係になければいけない。
+例えばモデル2が<code>phabs*powerlaw*gabs</code>だと
+<code>gabs</code>の係数を0にするには<code>powerlaw</code>もいじることになる。これは nest ではないのでダメ。</p>
+<h3 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h3>
 <ul>
-<li>男性と女性の身長の平均値は異なる</li>
-<li>高校生は中学生より握力の平均値が高い</li>
+<li>Orlandini et al., 2012, ApJ, 748, 86</li>
+<li>Iwakiri et al., 2012, ApJ, 751, 35</li>
+<li>Jaisawal et al., 2013, ApJ, 779, 54</li>
+<li>Bevington, P. R. 1969, Data Reduction and Error Analysis for the Physical Sciences (New York: McGraw-Hill)</li>
+<li>Press, W. H., Teukolsky, S. A., Vetterling, W. T., &amp; Flannery, B. P. 2007, Numerical Recipes: The Art of Scientific Computing (Cambridge: Cambridge Univ. Press) 
+https://www.hs.uni-hamburg.de/DE/Ins/Per/Czesla/PyA/PyA/pyaslDoc/aslDoc/statTest.html</li>
 </ul>
-<p>ところが統計学では、奇妙に思われるかもしれないが、最終的にその仮説が棄却される(仮説が誤りであるとされる)ことを前提とした仮説を立てるようにする、言い換えると、これは反証可能な仮説を立てるということである。</p>
-<h2 id="_3">統計学でいう仮説の例<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ul>
-<li>男性と女性の身長の平均値は等しい</li>
-<li>高校生と中学生の握力の平均値は等しい</li>
-</ul>
-<p>このような反証可能な仮説のことを統計学では<b><font color="red">帰無仮説</font></b>という。 
-また、これに対する仮説として<b><font color="red">対立仮説</font></b>を立てる。
-例えば、すでにあげた2つの問題 
-(1)「男性と女性の身長の平均値は異なるか」
-(2)「高校生と中学生の握力の平均値は異なるか」について考えてみる。</p>
-<h3 id="1">問題(1)の帰無仮説と対立仮説<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<p>問題(1)については次のように帰無仮説と対立仮説を立てることになる。</p>
-<p><strong>帰無仮説</strong> : 男性と女性の平均値は等しい</p>
-<p><strong>対立仮説</strong> : 男性と女性の平均値は等しくない(異なる)</p>
-<h3 id="2">問題(2)の帰無仮説と対立仮説<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p>一方で問題(2)については、もう少し複雑な対立仮説を考えることになる。
-元々、主張したい仮説(一般でいう仮説)は「高校生は中学生より握力の平均値が高い」というものだから、「等しくない」という対立仮説は保守的な主張だろう。したがって、より強い主張として「より大きい」あるいは(場合によっては)「より小さい」といった、方向性のある対立仮説を立てることになる。先の話になるが、前者のような保守的な仮説を検定することを両側検定、後者のような方向性のある仮説を検定することを片側検定という。また、このように仮説を検定することを統計的仮説検定という、なお、心理学においてはほとんどの場合において両側検定(保守的な主張)が行われる。</p>
-<p><strong>帰無仮説</strong> : 高校生と中学生の平均値は等しい</p>
-<p><strong>対立仮説</strong>  </p>
-<ol>
-<li>高校生と中学生の平均値は等しくない(異なる)</li>
-<li>高校生の平均値は中学生の平均値より大きい</li>
-<li>高校生の平均値は中学生の平均値より小さい</li>
-</ol>
                 
               
               
@@ -778,7 +736,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../significance/" title="significance" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../statistical_hypothesis/" title="statistical hypothesis" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -787,19 +745,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                significance
+                statistical hypothesis
               </div>
             </div>
           </a>
         
         
-          <a href="../ftest/" title="F-test" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../run_test/" title="run test - 連検定" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                F-test
+                run test - 連検定
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
