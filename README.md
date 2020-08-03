@@ -2,7 +2,7 @@
 
 ## Link to deployed page
 
-<kbd><a href="https://ayukiyoshida.github.io/tips/)">Click to me !!</a></kbd>
+<kbd><a href="https://ayukiyoshida.github.io/tips/">Click to me !!</a></kbd>
 
 ## Environments
 
