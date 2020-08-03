@@ -30,7 +30,7 @@ nav:
 theme:
     name: material
     nav_style: dark
-    favicon: /assets/img/favicon.ico
+    favicon: assets/img/favicon.ico
     icon:
         logo: material/school
     language: en
