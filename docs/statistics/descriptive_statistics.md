@@ -147,7 +147,7 @@ $$
 ここで、標本の分布と標本平均の分布には下図のような重要な関係がある。
 
 <div align="center">
-<img src="/assets/statistics/distribution_image.png" width="70%"/>
+<img src="/images/statistics/distribution_image.png" width="70%"/>
 </div>
 
 標本平均の分布は、 <font color="Red">母分散が既知、もしくは標本サイズが大規模(n=50程度以上)の場合、 <u>標本平均の標準偏差</u> が母標準偏差の$1/\sqrt{n}$倍した値</font>をもつ分布をとる。

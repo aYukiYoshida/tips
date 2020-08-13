@@ -1,7 +1,9 @@
 site_name: TIPS
 site_description: This is my yummy tips
 site_author: aYukiYoshida
+site_url: https://ayukiyoshida.github.io/tips
 repo_url: https://github.com/aYukiYoshida/tips
+
 nav:
     - TOP: index.md
     - STATISTICS: 
@@ -32,7 +34,7 @@ nav:
 theme:
     name: material
     nav_style: dark
-    favicon: assets/img/favicon.ico
+    favicon: images/logo/favicon.ico
     icon:
         logo: material/school
     language: en
@@ -51,11 +53,11 @@ markdown_extensions:
     - pymdownx.arithmatex:
         generic: true
     - pymdownx.superfences
+    - pymdownx.magiclink
     - admonition
     - def_list
 
 extra_javascript:
-    # - javascripts/config.js
     - https://polyfill.io/v3/polyfill.min.js?features=es6
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 

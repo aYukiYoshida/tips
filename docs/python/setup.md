@@ -52,7 +52,7 @@ pyenv-installerを使用するには、`git`が必要なので、事前にイン
 1. 起動
     `% jupyter notebook`
     ブラウザが起動して、以下のような画面が表示されればOK
-    <img src="/assets/python/jupyter.png" width="100%"/>
+    ![jupyter](./images//jupyter.png)
 
 
 ### install jupyterlab
