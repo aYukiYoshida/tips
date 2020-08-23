@@ -778,6 +778,48 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Design
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Design" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Design
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../design/beautiful_figure/" title="beautiful figure" class="md-nav__link">
+      beautiful figure
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -927,11 +969,13 @@
                 
                 <h1 id="_1">記述統計<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">記述統計と推測統計<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>統計学は、以下の2つにわけられる(説明はざっくりしたもの)。
-* 記述統計
-手持ちのデータを集計する方法
-* 推測統計
-手持ちのデータを分析して、まだ手に入れていないデータについて議論する方法</p>
+<p>統計学は、以下の2つにわけられる(説明はざっくりしたもの)。  </p>
+<ul>
+<li>記述統計<br />
+手持ちのデータを集計する方法</li>
+<li>推測統計<br />
+手持ちのデータを分析して、まだ手に入れていないデータについて議論する方法</li>
+</ul>
 <p>推測統計学こそが、統計学において最も重要な部分。
 記述統計学は、推測統計学の前処理に当たるものだと考えても構わない。
 記述統計は知っておく必要はあるが、記述統計だけでは、データを社会の役に立たせることはできないことを意味する。</p>
@@ -940,9 +984,11 @@
 しかし、記述統計無しで推測統計を活用することもできない。</p>
 <p>推測統計は「手持ちのデータを分析して、まだ手に入れていないデータについて議論する」方法。
 そして、統計的予測理論においては「未来は過去と同じ」という前提のもと予測を行う。</p>
-<p>以下の2つの予測を比較してみる。
-1. 「気温が高いとビールが売れるというコトが1回だけあった」だから「今後、気温が高いとビールが良く売れる」
-1. 「気温が高いとビールが売れるというコトが5万回もあった」だから「今後、気温が高いとビールが良く売れる」</p>
+<p>以下の2つの予測を比較してみる。  </p>
+<ol>
+<li>「気温が高いとビールが売れるというコトが1回だけあった」だから「今後、気温が高いとビールが良く売れる」</li>
+<li>「気温が高いとビールが売れるというコトが5万回もあった」だから「今後、気温が高いとビールが良く売れる」</li>
+</ol>
 <p>どちらの予測のほうが信用できるかは、当然2のはず。多くのデータを使って予測した方が信用できる。
 データが多いほうがよさそうというのは、容易に想像できるが、多くのデータを、一つ一つ分けて扱うのは面倒。</p>
 <p>そこで重要なのが、データの <strong>集計</strong>。
@@ -1032,10 +1078,7 @@
 <h2 id="_9">標本と標本平均の分布<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <p>何回かにわけてある標本データを採取した場合、各々の標本データの平均自体も分布する(ばらつく)。
 ここで、標本の分布と標本平均の分布には下図のような重要な関係がある。</p>
-<div align="center">
-<img src="/images/statistics/distribution_image.png" width="70%"/>
-</div>
-
+<p><img alt="significance_figure1" src="../../images/statistics/significance_figure1.png" /></p>
 <p>標本平均の分布は、 <font color="Red">母分散が既知、もしくは標本サイズが大規模(n=50程度以上)の場合、 <u>標本平均の標準偏差</u> が母標準偏差の<span class="arithmatex">\(1/\sqrt{n}\)</span>倍した値</font>をもつ分布をとる。
 この標本平均の標準偏差のことを <font color="Red">標準誤差</font> と呼び、標本平均の分散のことを <font color="Red">誤差分散</font> と呼ぶ。
 これらの値は、母集団からある数の標本を選ぶとき、選ぶ組み合わせに依って統計量がどの程度ばらつくかを表す指標であり、
