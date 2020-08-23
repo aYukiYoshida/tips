@@ -7,14 +7,14 @@ HTMLの要素には、改行される要素と改行されない要素がある�
 前後で改行が入り、親要素の幅一杯に広がる要素を<font color="Red">ブロック要素</font>と呼ぶ。  
 e.g.) `<div>`, `<h1>`, `<p>`
 
-![block-1](./images/block-1.png)
+![block-1](../../images/webfrontend/html/block-1.png)
 
 ## インライン要素
 
 一方で、改行されない要素を<font color="Red">インライン要素</font>  
 e.g.) `<a>`, `<span>`
 
-![inline-1](./images/inline-1.png)
+![inline-1](../../images/webfrontend/html/inline-1.png)
 
 ## インラインブロック要素
 
@@ -23,5 +23,5 @@ e.g.) `<a>`, `<span>`
 
 |block|inline-block|inline|
 |-|-|-|
-|![block-2](./images/block-2.png)|![inline-block-1](./images/inline-block-1.png)|![inline-2](./images/inline-2.png)|
+|![block-2](../../images/webfrontend/html/block-2.png)|![inline-block-1](../../images/webfrontend/html/inline-block-1.png)|![inline-2](../../images/webfrontend/html/inline-2.png)|
 
