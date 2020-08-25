@@ -6,8 +6,9 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[#リモラブ ～普通の恋は邪道～](https://www.ntv.co.jp/remolove/)|水22(?)|日テレ||
-|[24JAPAN](https://www.tv-asahi.co.jp/24japan/)|木21(?)|テレ朝||
+|[七人の秘書](https://www.tv-asahi.co.jp/7-hisho/#/?category=drama)|木21|テレ朝||
 |[タリオ 復讐代行の2人](https://www.nhk.or.jp/dramatopics-blog/22000/433593.html)|金22|NHK|10/9放送開始|
+|[24JAPAN](https://www.tv-asahi.co.jp/24japan/)|金23|テレ朝|10/9方法開始|
 |[東京タラレバ娘2020](https://www.ntv.co.jp/tarareba2020/)|(?)|日テレ||
 |[35歳の少女](https://www.ntv.co.jp/shojo35/)|土22(?)|日テレ||
 |[危険なビーナス](https://www.tbs.co.jp/kikenna_venus/)|日21|TBS||
