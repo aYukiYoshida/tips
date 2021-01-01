@@ -18,8 +18,6 @@ nav:
             - Bayesian statistics: statistics/bayesian/bayesian_statistics.md
     - NLP:
         - How to install tools: nlp/install_tools.md
-    - Python:
-        - Setup : python/setup.md
     - LaTeX:
         - Horizontal line in LaTeX: latex/dash.md
         - Make LaTeX formulas online images: latex/online_equation.md
