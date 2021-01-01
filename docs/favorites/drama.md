@@ -1,5 +1,19 @@
 # DRAMA
 
+## 2021/01-03 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[青のSP - 学校内警察・嶋田隆平](https://www.ktv.jp/schoolpolice/)|火21|フジ|1/12放送開始|
+|[ウチの娘は、彼氏が出来ない！！](https://www.ntv.co.jp/uchikare/)|水22|日テレ|1/13放送開始|
+|[にじいろカルテ](https://www.tv-asahi.co.jp/nijiiro/)|木21|テレ朝|1/21放送開始|
+|[知ってるワイフ](https://www.fujitv.co.jp/shitteruwife/)|木22|フジ|1/7放送開始|
+|[俺の家の話](https://www.tbs.co.jp/oreie_tbs/)|金22|TBS|1/22放送開始|
+|[バイプレイヤーズ 〜名脇役の森の100日間〜](https://www.tv-tokyo.co.jp/byplayers/)|金24|テレ東|1/8放送開始|
+|[レッドアイズ 監視捜査班](https://www.ntv.co.jp/redeyes/)|土22|日テレ|1/23放送開始|
+|[書けないッ！？～脚本家 吉丸圭佑の筋書きのない生活～](https://www.tv-asahi.co.jp/kakenai/)|土23|テレ朝|1/16放送開始|
+|[天国と地獄 ～サイコな2人～](https://www.tbs.co.jp/tengokutojigoku_tbs/)|日21|TBS|1/17放送開始|
+
 
 ## 2020/10 start
 
