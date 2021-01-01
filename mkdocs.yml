@@ -16,6 +16,8 @@ nav:
         - Bayesian:
             - Bayesian estimation: statistics/bayesian/bayesian_estimation.md
             - Bayesian statistics: statistics/bayesian/bayesian_statistics.md
+    - PHYSICS:
+        - solid angle: physics/solid_angle.md
     - NLP:
         - How to install tools: nlp/install_tools.md
     - LaTeX:
