@@ -1,5 +1,21 @@
 # DRAMA
 
+## 2021/04-06 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[イチケイのカラス](https://www.fujitv.co.jp/ichikei/)*|月21|フジ|4/5放送開始|
+|[大豆田とわ子と三人の元夫](https://www.ktv.jp/mameo/)*|火21|フジ|4/13放送開始|
+|[恋はDeepに](https://www.ntv.co.jp/deep/)|水22|日テレ|4/14放送開始|
+|[桜の塔](https://www.tv-asahi.co.jp/sakuranotou)*|木21|テレ朝|4/15放送開始|
+|[リコカツ](https://www.tbs.co.jp/rikokatsu_tbs/)|金22|TBS|4/16放送開始|
+|[半径5メートル](https://www.nhk.or.jp/dramatopics-blog/22000/442717.html)*|金22|NHK|4/30放送開始|
+|[今ここにある危機とぼくの好感度について](https://www.nhk.or.jp/dramatopics-blog/6000/439721.html)*|土21|NHK|4/24放送開始|
+|[コントが始まる](https://www.ntv.co.jp/conpaji/)*|土22|日テレ|4/17放送開始|
+|[ドラゴン桜](https://www.tbs.co.jp/dragonzakura/)*|日21|TBS|4/25放送開始|
+|[ネメシス](https://www.ntv.co.jp/nemesis/)*|日22|日テレ|4/11放送開始|
+
+
 ## 2021/01-03 season
 
 |title|on-air datetime|Broadcaster|comments|
