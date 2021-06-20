@@ -30,7 +30,6 @@
 |[ドラゴン桜](https://www.tbs.co.jp/dragonzakura/)*|日21|TBS|4/25放送開始|
 |[ネメシス](https://www.ntv.co.jp/nemesis/)*|日22|日テレ|4/11放送開始|
 
-
 ## 2021/01-03 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -45,12 +44,11 @@
 |[書けないッ！？～脚本家 吉丸圭佑の筋書きのない生活～](https://www.tv-asahi.co.jp/kakenai/)|土23|テレ朝|1/16放送開始|
 |[天国と地獄 ～サイコな2人～](https://www.tbs.co.jp/tengokutojigoku_tbs/)|日21|TBS|1/17放送開始|
 
-
 ## 2020/10 start
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
-|[#リモラブ ～普通の恋は邪道～](https://www.ntv.co.jp/remolove/)|水22(?)|日テレ||
+|[#リモラブ ～普通の恋は邪道～](https://www.ntv.co.jp/remolove/)|水22|日テレ||
 |[七人の秘書](https://www.tv-asahi.co.jp/7-hisho/#/?category=drama)|木21|テレ朝||
 |[タリオ 復讐代行の2人](https://www.nhk.or.jp/dramatopics-blog/22000/433593.html)|金22|NHK|10/9放送開始|
 |[24JAPAN](https://www.tv-asahi.co.jp/24japan/)|金23|テレ朝|10/9方法開始|
@@ -58,7 +56,6 @@
 |[35歳の少女](https://www.ntv.co.jp/shojo35/)|土22(?)|日テレ||
 |[危険なビーナス](https://www.tbs.co.jp/kikenna_venus/)|日21|TBS||
 |[極主夫道](https://www.ytv.co.jp/gokushufudo/)|日22|日テレ||
-
 
 ## 2020/09 start
 
@@ -76,7 +73,6 @@
 |[働かざる者たち](https://www.tv-tokyo.co.jp/hatarakazaru/) |水25|テレ東|8/26放送開始|
 |[親バカ青春白書](https://www.ntv.co.jp/oyabaka/) |日22|日テレ|8/2放送開始|
 
-
 ## 2020/04-06 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -90,7 +86,6 @@
 |捨ててよ、安達さん。|金25|テレ東|4/17-|
 |半沢直樹|日21|TBS| 7/19-|
 
-
 ## 2020/01-03 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -102,7 +97,6 @@
 |アリバイ崩し承ります|土23|テレ朝|2/1-|
 |テセウスの船|日21|TBS||
 
-
 ## 2019/10-12 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -113,7 +107,6 @@
 |俺の話は長い|土22|日テレ| 10/12-|
 |ニッポンノワール|日22|日テレ|
 
-
 ## 2019/07-09 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -122,7 +115,6 @@
 |凪のお暇 |金22|TBS||
 |ボイス 110緊急指令室 |土22|日テレ||
 |ノーサイド・ゲーム |日21|TBS||
-
 
 ## 2019/04-06 season
 
@@ -133,7 +125,6 @@
 |緊急取調室  |木21|テレ朝||
 |インハンド |金22|TBS||
 |集団左遷!! |日21|TBS||
-
 
 ## 2019/01-03 season
 
@@ -147,7 +138,6 @@
 |グッドワイフ |日21|TBS||
 |3年A組 -今からみなさんは、人質です- |日22|日テレ||
 
-
 ## 2018/10-12 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -155,7 +145,6 @@
 |獣になれない私たち |水22|日テレ||
 |天 天和通りの快男児 |水25|日テレ||
 |忘却のサチコ |金24|テレ東||
-
 
 ## 2018/07-09 season
 
@@ -165,14 +154,12 @@
 |dele |金23|テレ朝||
 |ゼロ 一攫千金ゲーム |日22|日テレ||
 
-
 ## 2018/04-06 season
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |コンフィデンスマンJP |月21|フジ||
 |宮本から君へ |金25|テレ東||
-
 
 ## 2018/01-03 season
 
@@ -184,7 +171,6 @@
 |もみ消して冬 ~我が家の問題なかったことに~ |土22|日テレ||
 |99.9 -刑事専門弁護士- SeasonⅡ |日21|TBS||
 
-
 ## 2017/10-12 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -192,7 +178,6 @@
 |監獄のお姫さま |火22|TBS||
 |奥様は取り扱い注意 |水22|日テレ||
 |刑事ゆがみ |木22|フジ||
-
 
 ## 2017/07-09 season
 
@@ -204,7 +189,6 @@
 |ハロー張りネズミ |金22|TBS||
 |ウチの夫は仕事ができない |土22|日テレ||
 
-
 ## 2017/04-06 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -215,14 +199,12 @@
 |ボク、運命の人です。 |土21|日テレ||
 |小さな巨人 |日21|TBS||
 
-
 ## 2017/01-03 season
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |カルテット |火22|TBS||
 |嫌われる勇気 |木22|フジ||
-
 
 ## 2016/10-12 season
 
@@ -235,7 +217,6 @@
 |IQ246 ~華麗なる事件簿~|日21|TBS||
 |キャリア ~掟破りの警察署長~|日21|フジ||
 
-
 ## 2016/04-06 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -245,7 +226,6 @@
 |早子先生結婚するって本当ですか |木22|フジ|
 |結婚できないんじゃなくて、しないんです |金22|TBS|
 |ゆとりですが、何か |日22|日テレ|
-
 
 ## 2016/01-03 season
 
