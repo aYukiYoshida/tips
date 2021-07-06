@@ -4,16 +4,16 @@
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
-|[ナイト・ドクター](https://www.fujitv.co.jp/NightDoctor/introduction/index.html)|月21|フジ|6/21放送開始|
-|[プロミスシンデレラ](https://www.tbs.co.jp/promise_cinderella_tbs/)|火22|TBS|7月放送開始|
-|[ハコヅメ 〜たたかう！交番女子〜](https://www.ntv.co.jp/hakozume/)|水22|日テレ|7/7放送開始|
-|[ただ離婚してないだけ](https://www.tv-tokyo.co.jp/tadarikon/)|水24|日テレ|7/7放送開始|
-|[緊急取調室](https://www.tv-asahi.co.jp/kintori/)|木21|テレ朝|7/8放送開始|
+|[ナイト・ドクター](https://www.fujitv.co.jp/NightDoctor/introduction/index.html)*|月21|フジ|6/21放送開始|
+|[プロミスシンデレラ](https://www.tbs.co.jp/promise_cinderella_tbs/)|火22|TBS|7/13放送開始|
+|[ハコヅメ 〜たたかう！交番女子〜](https://www.ntv.co.jp/hakozume/)*|水22|日テレ|7/7放送開始|
+|[ただ離婚してないだけ](https://www.tv-tokyo.co.jp/tadarikon/)*|水24|日テレ|7/7放送開始|
+|[緊急取調室](https://www.tv-asahi.co.jp/kintori/)*|木21|テレ朝|7/8放送開始|
 |[推しの王子様](https://www.fujitv.co.jp/oshinooujisama/)|木22|フジ|7/15放送開始|
-|[初情事まであと1時間](https://www.mbs.jp/hatsu-jouji/)|木25|MBS|7/22放送開始|
+|[初情事まであと1時間](https://www.mbs.jp/hatsu-jouji/)*|木25|MBS|7/22放送開始|
 |[＃家族募集します](https://www.tbs.co.jp/kazokuboshuu_tbs/)|金22|TBS|7/9放送開始|
-|[TOKYO MER 走る緊急救命室](https://www.tbs.co.jp/TokyoMER_tbs/)|日21|TBS|7/4放送開始|
-|[ボクの殺意が恋をした](https://www.ytv.co.jp/bokukoi/)|日22|日テレ|7/4放送開始|
+|[TOKYO MER 走る緊急救命室](https://www.tbs.co.jp/TokyoMER_tbs/)*|日21|TBS|7/4放送開始|
+|[ボクの殺意が恋をした](https://www.ytv.co.jp/bokukoi/)*|日22|日テレ|7/4放送開始|
 
 ## 2021/04-06 season
 
