@@ -1,34 +1,43 @@
 # DRAMA
 
+## 2021/10-12 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[ラジエーションハウスII ~放射線科の診断レポート~](https://www.fujitv.co.jp/radiationhouse2/)|月21|フジ|10/4放送開始|
+|[アバランチ](https://www.ktv.jp/A/)|月22|フジ|10/18放送開始|
+|[じゃない方の彼女](https://www.tv-tokyo.co.jp/janaiho/)|月23|テレ東|10/11放送開始|
+|[婚姻届に判を捺しただけですが](https://www.tbs.co.jp/hannoshi_tbs/)|火22|TBS|10/19放送開始|
+|[SUPER RICH](https://www.fujitv.co.jp/SUPERRICH/)|木22|フジ|10/14放送開始|
+|[スナック キズツキ](https://www.tv-tokyo.co.jp/kizutsuki/)|金24|テレ東|10/8放送開始|
+|[和田家の男たち](https://www.tv-asahi.co.jp/wadake/)|金23|テレ朝|10/22放送開始|
+|[正義の天秤](https://www.nhk.jp/p/ts/RM4PJL5QGN/)|土21|NHK|9/25放送開始|
+|[それでも愛を誓いますか？](https://www.asahi.co.jp/soreai/)|土26|テレ朝|10/2放送開始|
+|[日本沈没 -希望のひと-](https://www.tbs.co.jp/nihon_chinbotsu_tbs/)|日21|TBS|10/10放送開始|
+|[真犯人フラグ](https://www.ntv.co.jp/shinhannin-flag/)|日22|日テレ|10/10放送開始|
+
 ## 2021/07-09 season
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
-|[ナイト・ドクター](https://www.fujitv.co.jp/NightDoctor/introduction/index.html)*|月21|フジ|6/21放送開始|
-|[プロミスシンデレラ](https://www.tbs.co.jp/promise_cinderella_tbs/)|火22|TBS|7/13放送開始|
-|[ハコヅメ 〜たたかう！交番女子〜](https://www.ntv.co.jp/hakozume/)*|水22|日テレ|7/7放送開始|
-|[ただ離婚してないだけ](https://www.tv-tokyo.co.jp/tadarikon/)*|水24|日テレ|7/7放送開始|
-|[緊急取調室](https://www.tv-asahi.co.jp/kintori/)*|木21|テレ朝|7/8放送開始|
-|[推しの王子様](https://www.fujitv.co.jp/oshinooujisama/)|木22|フジ|7/15放送開始|
-|[初情事まであと1時間](https://www.mbs.jp/hatsu-jouji/)*|木25|MBS|7/22放送開始|
-|[＃家族募集します](https://www.tbs.co.jp/kazokuboshuu_tbs/)|金22|TBS|7/9放送開始|
-|[TOKYO MER 走る緊急救命室](https://www.tbs.co.jp/TokyoMER_tbs/)*|日21|TBS|7/4放送開始|
-|[ボクの殺意が恋をした](https://www.ytv.co.jp/bokukoi/)*|日22|日テレ|7/4放送開始|
+|[ナイト・ドクター](https://www.fujitv.co.jp/NightDoctor/introduction/index.html)|月21|フジ|6/21放送開始|
+|[ハコヅメ 〜たたかう！交番女子〜](https://www.ntv.co.jp/hakozume/)|水22|日テレ|7/7放送開始|
+|[ただ離婚してないだけ](https://www.tv-tokyo.co.jp/tadarikon/)|水24|日テレ|7/7放送開始|
+|[緊急取調室](https://www.tv-asahi.co.jp/kintori/)|木21|テレ朝|7/8放送開始|
+|[初情事まであと1時間](https://www.mbs.jp/hatsu-jouji/)|木25|MBS|7/22放送開始|
+|[TOKYO MER 走る緊急救命室](https://www.tbs.co.jp/TokyoMER_tbs/)|日21|TBS|7/4放送開始|
+|[ボクの殺意が恋をした](https://www.ytv.co.jp/bokukoi/)|日22|日テレ|7/4放送開始|
 
 ## 2021/04-06 season
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
-|[イチケイのカラス](https://www.fujitv.co.jp/ichikei/)*|月21|フジ|4/5放送開始|
-|[大豆田とわ子と三人の元夫](https://www.ktv.jp/mameo/)*|火21|フジ|4/13放送開始|
-|[恋はDeepに](https://www.ntv.co.jp/deep/)|水22|日テレ|4/14放送開始|
-|[桜の塔](https://www.tv-asahi.co.jp/sakuranotou)*|木21|テレ朝|4/15放送開始|
-|[リコカツ](https://www.tbs.co.jp/rikokatsu_tbs/)|金22|TBS|4/16放送開始|
-|[半径5メートル](https://www.nhk.or.jp/dramatopics-blog/22000/442717.html)*|金22|NHK|4/30放送開始|
-|[今ここにある危機とぼくの好感度について](https://www.nhk.or.jp/dramatopics-blog/6000/439721.html)*|土21|NHK|4/24放送開始|
-|[コントが始まる](https://www.ntv.co.jp/conpaji/)*|土22|日テレ|4/17放送開始|
-|[ドラゴン桜](https://www.tbs.co.jp/dragonzakura/)*|日21|TBS|4/25放送開始|
-|[ネメシス](https://www.ntv.co.jp/nemesis/)*|日22|日テレ|4/11放送開始|
+|[イチケイのカラス](https://www.fujitv.co.jp/ichikei/)|月21|フジ|4/5放送開始|
+|[大豆田とわ子と三人の元夫](https://www.ktv.jp/mameo/)|火21|フジ|4/13放送開始|
+|[桜の塔](https://www.tv-asahi.co.jp/sakuranotou)|木21|テレ朝|4/15放送開始|
+|[半径5メートル](https://www.nhk.or.jp/dramatopics-blog/22000/442717.html)|金22|NHK|4/30放送開始|
+|[コントが始まる](https://www.ntv.co.jp/conpaji/)|土22|日テレ|4/17放送開始|
+|[ドラゴン桜](https://www.tbs.co.jp/dragonzakura/)|日21|TBS|4/25放送開始|
 
 ## 2021/01-03 season
 
