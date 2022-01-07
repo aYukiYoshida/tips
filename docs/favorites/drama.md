@@ -1,5 +1,18 @@
 # DRAMA
 
+## 2022/01-03 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[ミステリと言う勿れ](https://www.fujitv.co.jp/mystery/)|月21|フジ|1/10放送開始|
+|[ドクターホワイト](https://www.ktv.jp/dr_white/)|月22|フジ|1/17放送開始|
+|[ムチャブリ！ わたしが社長になるなんて](https://www.ntv.co.jp/muchaburi/)|水22|日テレ|1/12放送開始|
+|[となりのチカラ](https://www.tv-asahi.co.jp/tonarinotikara/)|木21|テレ朝|1/20放送開始|
+|[ゴシップ#彼女が知りたい本当の○○](https://www.fujitv.co.jp/gossip/)|木22|フジ|1/6放送開始|
+|[愛しい嘘 〜優しい闇〜](https://www.tv-asahi.co.jp/itouso/)|金23|テレ朝|1/14放送開始|
+|[鎌倉殿の13人](https://www.nhk.or.jp/kamakura13/)|日20|NHK|1/9放送開始|
+|[DCU 〜手錠を持ったダイバー〜](https://www.tbs.co.jp/DCU_japan/)|日21|TBS|1/16放送開始|
+
 ## 2021/10-12 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -7,14 +20,11 @@
 |[ラジエーションハウスII ~放射線科の診断レポート~](https://www.fujitv.co.jp/radiationhouse2/)|月21|フジ|10/4放送開始|
 |[アバランチ](https://www.ktv.jp/A/)|月22|フジ|10/18放送開始|
 |[じゃない方の彼女](https://www.tv-tokyo.co.jp/janaiho/)|月23|テレ東|10/11放送開始|
-|[婚姻届に判を捺しただけですが](https://www.tbs.co.jp/hannoshi_tbs/)|火22|TBS|10/19放送開始|
 |[SUPER RICH](https://www.fujitv.co.jp/SUPERRICH/)|木22|フジ|10/14放送開始|
-|[スナック キズツキ](https://www.tv-tokyo.co.jp/kizutsuki/)|金24|テレ東|10/8放送開始|
 |[和田家の男たち](https://www.tv-asahi.co.jp/wadake/)|金23|テレ朝|10/22放送開始|
 |[正義の天秤](https://www.nhk.jp/p/ts/RM4PJL5QGN/)|土21|NHK|9/25放送開始|
 |[それでも愛を誓いますか？](https://www.asahi.co.jp/soreai/)|土26|テレ朝|10/2放送開始|
 |[日本沈没 -希望のひと-](https://www.tbs.co.jp/nihon_chinbotsu_tbs/)|日21|TBS|10/10放送開始|
-|[真犯人フラグ](https://www.ntv.co.jp/shinhannin-flag/)|日22|日テレ|10/10放送開始|
 
 ## 2021/07-09 season
 
