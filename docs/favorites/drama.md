@@ -9,7 +9,6 @@
 |[ムチャブリ！ わたしが社長になるなんて](https://www.ntv.co.jp/muchaburi/)|水22|日テレ|1/12放送開始|
 |[となりのチカラ](https://www.tv-asahi.co.jp/tonarinotikara/)|木21|テレ朝|1/20放送開始|
 |[ゴシップ#彼女が知りたい本当の○○](https://www.fujitv.co.jp/gossip/)|木22|フジ|1/6放送開始|
-|[愛しい嘘 〜優しい闇〜](https://www.tv-asahi.co.jp/itouso/)|金23|テレ朝|1/14放送開始|
 |[鎌倉殿の13人](https://www.nhk.or.jp/kamakura13/)|日20|NHK|1/9放送開始|
 |[DCU 〜手錠を持ったダイバー〜](https://www.tbs.co.jp/DCU_japan/)|日21|TBS|1/16放送開始|
 
