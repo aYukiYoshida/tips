@@ -5,9 +5,8 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[元彼の遺言状](https://www.fujitv.co.jp/motokare/)|月21|フジ|4/11放送開始|
-|[恋なんて、本気でやってどうするの？](https://www.ktv.jp/koimaji/)|月22|フジ|4/18放送開始|
 |[正直不動産](https://www.nhk.jp/p/ts/5GKZ6NXYVM/)|火22|NHK|4/5放送開始|
-|[シェアするラ！インスタントラーメンアレンジ部はじめました。](https://sharesuru-ra.com/)|木23|BSTBS|4/7放送開始|
+|[悪女 〜働くのがカッコ悪いなんて誰が言った？〜](https://www.ntv.co.jp/waru2022/)|水22|日テレ|4/13放送開始|
 |[俺の可愛いはもうすぐ消費期限!?](https://www.tv-asahi.co.jp/orekawa/)|土23|テレ朝|4/16放送開始|
 |[今夜はコの字で Season2](https://www.bs-tvtokyo.co.jp/konoji2/)|土24|BSテレ東|4/9放送開始|
 |[鎌倉殿の13人](https://www.nhk.or.jp/kamakura13/)|日20|NHK|1/9放送開始|
