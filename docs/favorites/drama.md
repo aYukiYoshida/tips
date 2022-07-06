@@ -5,8 +5,9 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[競争の番人](https://www.fujitv.co.jp/kyosonobannin/)|月21|フジ|7/11放送開始|
-|[魔法のリノベ](https://www.ktv.jp/mahorino/)|月22|NHK|7/18放送開始|
+|[魔法のリノベ](https://www.ktv.jp/mahorino/)|月22|フジ|7/18放送開始|
 |[ユニコーンに乗って](https://www.tbs.co.jp/unicorn_ni_notte_tbs/)|火22|TBS|7/5放送開始|
+|[石子と羽男ーそんなコトで訴えます？ー](https://www.tbs.co.jp/ishikotohaneo_tbs/)|金22|TBS|7/8放送開始|
 |[初恋の悪魔](https://www.ntv.co.jp/hatsukoinoakuma/)|土22|日テレ|7/16放送開始|
 |[鎌倉殿の13人](https://www.nhk.or.jp/kamakura13/)|日20|NHK|1/9放送開始|
 |[オールドルーキー](https://www.tbs.co.jp/OLDROOKIE_tbs/)|日21|TBS|6/26放送開始|
