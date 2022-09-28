@@ -1,5 +1,14 @@
 # DRAMA
 
+## 2022/10-12 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[エルピス―希望、あるいは災い―](https://www.ktv.jp/elpis/)|月22|フジ|10/24放送開始|
+|[親愛なる僕へ殺意をこめて](https://www.fujitv.co.jp/shinainarubokue/)|水22|フジ|10/5放送開始|
+|[ジャパニーズスタイル](https://www.tv-asahi.co.jp/japanese_style//)|土23|テレ朝|10/22放送開始|
+|[アトムの童](https://www.tbs.co.jp/atomnoko_tbs/)|日21|TBS|10/X放送開始|
+
 ## 2022/07-09 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -9,7 +18,6 @@
 |[ユニコーンに乗って](https://www.tbs.co.jp/unicorn_ni_notte_tbs/)|火22|TBS|7/5放送開始|
 |[石子と羽男ーそんなコトで訴えます？ー](https://www.tbs.co.jp/ishikotohaneo_tbs/)|金22|TBS|7/15放送開始|
 |[初恋の悪魔](https://www.ntv.co.jp/hatsukoinoakuma/)|土22|日テレ|7/16放送開始|
-|[鎌倉殿の13人](https://www.nhk.or.jp/kamakura13/)|日20|NHK|1/9放送開始|
 |[オールドルーキー](https://www.tbs.co.jp/OLDROOKIE_tbs/)|日21|TBS|6/26放送開始|
 
 ## 2022/04-06 season
@@ -20,7 +28,6 @@
 |[正直不動産](https://www.nhk.jp/p/ts/5GKZ6NXYVM/)|火22|NHK|4/5放送開始|
 |[悪女 〜働くのがカッコ悪いなんて誰が言った？〜](https://www.ntv.co.jp/waru2022/)|水22|日テレ|4/13放送開始|
 |[今夜はコの字で Season2](https://www.bs-tvtokyo.co.jp/konoji2/)|土24|BSテレ東|4/9放送開始|
-|[鎌倉殿の13人](https://www.nhk.or.jp/kamakura13/)|日20|NHK|1/9放送開始|
 |[マイファミリー](https://www.tbs.co.jp/myfamily/)|日21|TBS|4/10放送開始|
 
 ## 2022/01-03 season
@@ -32,7 +39,6 @@
 |[ムチャブリ！ わたしが社長になるなんて](https://www.ntv.co.jp/muchaburi/)|水22|日テレ|1/12放送開始|
 |[となりのチカラ](https://www.tv-asahi.co.jp/tonarinotikara/)|木21|テレ朝|1/20放送開始|
 |[ゴシップ#彼女が知りたい本当の○○](https://www.fujitv.co.jp/gossip/)|木22|フジ|1/6放送開始|
-|[鎌倉殿の13人](https://www.nhk.or.jp/kamakura13/)|日20|NHK|1/9放送開始|
 |[DCU 〜手錠を持ったダイバー〜](https://www.tbs.co.jp/DCU_japan/)|日21|TBS|1/16放送開始|
 
 ## 2021/10-12 season
