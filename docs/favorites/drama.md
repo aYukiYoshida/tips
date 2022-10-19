@@ -5,8 +5,8 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[エルピス―希望、あるいは災い―](https://www.ktv.jp/elpis/)|月22|フジ|10/24放送開始|
-|[親愛なる僕へ殺意をこめて](https://www.fujitv.co.jp/shinainarubokue/)|水22|フジ|10/5放送開始|
 |[ザ・トラベルナース](https://www.tv-asahi.co.jp/the_travelnurse/)|木21|テレ朝|10/20放送開始|
+|[silent](https://www.fujitv.co.jp/silent/)|木22|フジ|10/6放送開始|
 |[ジャパニーズスタイル](https://www.tv-asahi.co.jp/japanese_style/)|土23|テレ朝|10/22放送開始|
 |[アトムの童](https://www.tbs.co.jp/atomnoko_tbs/)|日21|TBS|10/16放送開始|
 
