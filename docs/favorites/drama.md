@@ -8,7 +8,6 @@
 |[罠の戦争](https://www.ktv.jp/wana/)|月22|フジ|1/16放送開始|
 |[インフォーマ](https://www.ktv.jp/informa/)|木24|フジ|1/19放送開始|
 |[今夜すきやきだよ](https://www.tv-tokyo.co.jp/konyasukiyakidayo/)|金24|テレ東|1/6放送開始|
-|[Get Ready!](https://www.tbs.co.jp/getready_tbs/)|日21|TBS|1/8放送開始|
 |[ブラッシュアップライフ](https://www.ntv.co.jp/brushup-life/)|日22|日テレ|1/8放送開始|
 
 ## 2022/10-12 season
