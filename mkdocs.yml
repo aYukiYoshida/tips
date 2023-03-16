@@ -6,18 +6,21 @@ repo_url: https://github.com/aYukiYoshida/tips
 
 nav:
     - TOP: index.md
-    - STATISTICS: 
+    - STATISTICS:
         - descriptive statistics: statistics/descriptive_statistics.md
         - outlie: statistics/outlie.md
         - significance: statistics/significance.md
-        - statistical hypothesis: statistics/statistical_hypothesis.md   
+        - statistical hypothesis: statistics/statistical_hypothesis.md
         - statistics/ftest.md
         - statistics/run_test.md
         - Bayesian:
             - Bayesian estimation: statistics/bayesian/bayesian_estimation.md
             - Bayesian statistics: statistics/bayesian/bayesian_statistics.md
     - PHYSICS:
-        - solid angle: physics/solid_angle.md
+        - definition:
+            - solid angle: physics/definition/solid_angle.md
+        - tools:
+            - ROOT: physics/tools/root.md
     - NLP:
         - How to install tools: nlp/install_tools.md
     - LaTeX:
@@ -34,7 +37,7 @@ nav:
 theme:
     name: material
     nav_style: dark
-    favicon: images/logo/favicon.ico
+    favicon: images/favicon.ico
     icon:
         logo: material/school
     language: en
@@ -65,7 +68,7 @@ extra_css:
     - "https://fonts.googleapis.com/earlyaccess/notosansjp.css"
     - "https://fonts.googleapis.com/css?family=Open+Sans:600,800"
     - "css/custom.css"
-    
+
 plugins:
     - search:
         separator: '[\s\-\.]+'
