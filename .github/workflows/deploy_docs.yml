@@ -9,6 +9,9 @@ on:
       - 'mkdocs.yml'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -40,4 +43,4 @@ jobs:
 
       - name: Deploy documents to GitHub Pages
         run: |
-          poetry run mkdocs gh-deploy --force
+          poetry run mkdocs gh-deploy
