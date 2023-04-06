@@ -2,8 +2,8 @@
 
 | description | translation |
 | ---- | ---- |
-| I see		    | わかる    |
-| Definitly     | せやな    |
+| I see    | わかる    |
+| Definitely     | せやな    |
 | That’s it     | それな    |
-| Absolutely	| ほんまそれ|
+| Absolutely| ほんまそれ|
 | Exactly       | まさしく  |
