@@ -6,7 +6,7 @@
 
 |frequency| adverbs | translation |
 | ---- | ---- | ---- |
-| 100%| always		         | 「常に」「必ず」|
+| 100%| always         | 「常に」「必ず」|
 |  90%| almost,always            | 「ほぼ必ず」 |
 |  80%| usually,normally, generally     | 「普通は」「普段は」「たいていは」|
 |  70%| very often,frequently    | 「とてもよく」「頻繁に」|
