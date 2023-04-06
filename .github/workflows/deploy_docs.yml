@@ -1,4 +1,4 @@
-name: deploy-documents
+name: document-deployment
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
     paths:
       - 'docs/**/*'
       - 'mkdocs.yml'
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -39,5 +40,4 @@ jobs:
 
       - name: Deploy documents to GitHub Pages
         run: |
-          git fetch --depth=1 origin main
-          poetry run mkdocs gh-deploy
+          poetry run mkdocs gh-deploy --force
