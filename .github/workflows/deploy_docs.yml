@@ -1,0 +1,43 @@
+name: Deploy documents
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**/*'
+      - 'mkdocs.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git config
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email actions@github.com
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9.15'
+          cache: 'poetry'
+
+      - name: Install dependencies
+        run: |
+          poetry install --no-root
+
+      - name: Deploy documents to GitHub Pages
+        run: |
+          git fetch --depth=1 origin master
+          poetry run mkdocs gh-deploy
