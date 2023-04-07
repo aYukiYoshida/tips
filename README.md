@@ -11,33 +11,92 @@
 
 ## Environments
 
-- Install python package
+- Install python packages
 
-    ```bash
-    % poetry install
-    ```
+  ```shell
+  poetry install
+  ```
 
-## for MkDocs
+- Install node packages
+
+  ```shell
+  npm install
+  ```
+
+- setup pre-commit
+
+  ```shell
+  poetry run pre-commit install
+  ```
+
+## Commands
+
+### For mkdocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-### Commands
+- Create a new project
 
-- `poetry run mkdocs new [dir-name]` - Create a new project.
-- `poetry run mkdocs serve` - Start the live-reloading docs server.
-- `poetry run mkdocs build` - Build the documentation site.
-- `poetry run mkdocs gh-deploy` - Deploy the built documentation site on Github Pages.
-- `poetry run mkdocs -h` - Print help message and exit.
+  ```shell
+  poetry run mkdocs new [dir-name]
+  ```
 
-### Project layout
+- Start the live-reloading docs server
 
-```shell
+  ```shell
+  poetry run mkdocs serve
+  ```
+
+- Build the documentation site.
+
+  ```shell
+  poetry run mkdocs build
+  ```
+
+- Deploy the built documentation site on Github Pages.
+
+  ```shell
+  poetry run mkdocs gh-deploy
+  ```
+
+- Print help message and exit.
+
+  ```shell
+  poetry run mkdocs -h
+  ```
+
+### For zenn
+
+- Create a new project
+
+  ```shell
+  npx zenn init
+  ```
+
+- Create a new article
+
+  ```shell
+  npx zenn new:article
+  ```
+
+- Start the live-reloading docs server
+
+  ```shell
+  npx zenn preview --port 3000
+  ```
+
+## Project layout
+
+```text
 mkdocs.yml    # The configuration file.
-docs/
+docs/         # Articles for MkDocs
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
+articles      # Articles for Zenn
+books         # Books for Zenn
 ```
 
-### Reference (Non official)
+## Reference
 
 - [MkDocsによるドキュメント作成 - Qiita](https://qiita.com/mebiusbox2/items/a61d42878266af969e3c)
+- [GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
