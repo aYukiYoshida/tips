@@ -26,6 +26,8 @@ nav:
     - LaTeX:
         - Horizontal line in LaTeX: latex/dash.md
         - Make LaTeX formulas online images: latex/online_equation.md
+    - Testing:
+        - Gherkin: testing/gherkin.md
     - WebFrontEnd:
         - HTML:
             - inline-block: webfrontend/html/inline_block.md
