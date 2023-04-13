@@ -6,8 +6,8 @@
 |:-|:-|:-|:-|
 |[風間公親―教場0―](https://www.fujitv.co.jp/kyojo0/)|月21|フジ|4/10放送開始|
 |[合理的にあり得ない 探偵・上水流涼子の解明](https://www.ktv.jp/arienai/)|月22|フジ|4/17放送開始|
+|[わたしのお嫁くん](https://www.fujitv.co.jp/oyome_kun/)|水22|フジ|4/12放送開始|
 |[それってパクリじゃないですか？](https://www.ntv.co.jp/sorepaku/)|水22|日テレ|4/12放送開始|
-|[ケイジとケンジ、時々ハンジ。](https://www.tv-asahi.co.jp/keiji_kenji_hanji/)|木21|テレ朝|4/13放送開始|
 |[ラストマンー全盲の捜査官ー](https://www.tbs.co.jp/lastman_2023_tbs/)|日22|TBS|4/23放送開始|
 |[日曜の夜ぐらいは...](https://www.asahi.co.jp/drama_22_abctv/)|日22|テレ朝|4/30放送開始|
 |[だが、情熱はある](https://www.ntv.co.jp/daga-jyounetsu/)|日22|日テレ|4/9放送開始|
