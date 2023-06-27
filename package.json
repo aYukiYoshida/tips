@@ -7,6 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
+    "prepare": "failsafe prepare:poetry prepare:pre-commit",
+    "prepare:poetry": "poetry install",
+    "prepare:pre-commit": "poetry run pre-commit install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +24,7 @@
   },
   "homepage": "https://github.com/aYukiYoshida/tips#readme",
   "dependencies": {
+    "npm-failsafe": "^1.0.0",
     "zenn-cli": "^0.1.143"
   }
 }
