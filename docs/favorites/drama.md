@@ -1,5 +1,16 @@
 # DRAMA
 
+## 2023/07-09 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[こっち向いてよ向井くん](https://www.ntv.co.jp/mukaikun/)|水22|日テレ|7/12放送開始|
+|[彼女たちの犯罪](https://www.ytv.co.jp/kanojohanzai/)|木24|テレ朝|7/20放送開始|
+|[警部補ダイマジン](https://www.tv-asahi.co.jp/daimajin/)|金23|テレ朝|7/7放送開始|
+|[最高の教師 1年後、私は生徒に■された](https://www.ntv.co.jp/saikyo/)|土22|日テレ|7/15放送開始|
+|[VIVANT](https://www.tbs.co.jp/VIVANT_tbs/)|日21|TBS|7/16放送開始|
+|[CODE－願いの代償－](https://www.ytv.co.jp/code/)|日22|日テレ|7/2放送開始|
+
 ## 2023/04-06 season
 
 |title|on-air datetime|Broadcaster|comments|
