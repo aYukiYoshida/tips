@@ -30,6 +30,7 @@ nav:
         - Gherkin: testing/gherkin.md
         - Testability: testing/testability.md
         - Design Pattern: testing/design_pattern.md
+        - Test Pyramid: testing/pyramid.md
     - WebFrontEnd:
         - HTML:
             - inline-block: webfrontend/html/inline_block.md
