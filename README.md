@@ -90,6 +90,7 @@ docs/         # Articles for MkDocs
     ...       # Other markdown pages, images and other files.
 articles      # Articles for Zenn
 books         # Books for Zenn
+public        # Articles for Qiita
 ```
 
 ## Reference
