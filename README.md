@@ -7,27 +7,23 @@
 
 ## Requirements
 
+- [Node.js](https://nodejs.org)
+- [Python](https://www.python.org/)
 - [Poetry](https://python-poetry.org)
 
-## Environments
+## Setup
 
-- Install python packages
+1. Derive source code
 
-  ```shell
-  poetry install
-  ```
+    ```shell
+    git clone git@github.com:aYukiYoshida/tips.git
+    ```
 
-- Install node packages
+2. Install packages
 
-  ```shell
-  npm install
-  ```
-
-- setup pre-commit
-
-  ```shell
-  poetry run pre-commit install
-  ```
+    ```shell
+    npm install
+    ```
 
 ## Commands
 
