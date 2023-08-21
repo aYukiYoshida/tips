@@ -21,6 +21,8 @@ nav:
             - solid angle: physics/definition/solid_angle.md
         - tools:
             - ROOT: physics/tools/root.md
+    - Python:
+        - lmfit: python/lmfit.md
     - NLP:
         - How to install tools: nlp/install_tools.md
     - LaTeX:
