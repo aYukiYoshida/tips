@@ -281,3 +281,6 @@ dist
 
 # nodenv
 .node-version
+
+# qiita
+.remote
