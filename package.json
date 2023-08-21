@@ -24,10 +24,8 @@
   },
   "homepage": "https://github.com/aYukiYoshida/tips#readme",
   "dependencies": {
+    "@qiita/qiita-cli": "^1.0.0",
     "npm-failsafe": "^1.0.0",
     "zenn-cli": "^0.1.144"
-  },
-  "devDependencies": {
-    "@qiita/qiita-cli": "^1.0.0"
   }
 }
