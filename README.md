@@ -81,6 +81,26 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
   npx zenn preview --port 3000
   ```
 
+### For qiita
+
+- Create a new project
+
+  ```shell
+  npx qiita init
+  ```
+
+- Create a new article
+
+  ```shell
+  npx qiita new <BASE_NAME>
+  ```
+
+- Start the live-reloading docs server
+
+  ```shell
+  npx qiita preview
+  ```
+
 ## Project layout
 
 ```text
@@ -97,3 +117,4 @@ public        # Articles for Qiita
 
 - [MkDocsによるドキュメント作成 - Qiita](https://qiita.com/mebiusbox2/items/a61d42878266af969e3c)
 - [GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
+- [Qiita CLI](https://github.com/increments/qiita-cli)
