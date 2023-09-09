@@ -101,6 +101,14 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
   npx qiita preview
   ```
 
+### Convert articles
+
+- Convert articles from Zenn to Qiita
+
+  ```shell
+  npm run z2q <ARTICLE_ID>
+  ```
+
 ## Project layout
 
 ```text
