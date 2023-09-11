@@ -59,7 +59,7 @@ jobs:
 
       - name: Create pull requests
         run: |
-          files=(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD"))
+          files=($(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD")))
           for file in ${files[@]}; do
             echo $file
             if [[ $file =~ ^articles/.*\.md$ ]]; then
