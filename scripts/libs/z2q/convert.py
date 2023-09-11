@@ -127,6 +127,33 @@ class ZennToQiita(object):
     def _convert_alert_note(cls, line: str) -> str:
         return re.sub(r'^:::message alert$', r':::note alert', line)
 
+    @classmethod
+    def _mark_footnote(cls, line: str) -> str:
+        return re.sub(r'\^\[.*\]', '__FOOTNOTE__', line)
+
+    @classmethod
+    def _extract_footnotes_from_line(cls, line: str) -> list[str]:
+        footnotes = re.findall(r'\^\[.*\]', line)
+        return [re.sub(r'^\^\[(.*)\]$', r'\1', footnote) for footnote in footnotes]
+
+    @classmethod
+    def _extract_footnotes(cls, body: list[str]) -> list[str]:
+        extracted = [cls._extract_footnotes_from_line(line)
+                     for line in body]
+        return [footnote for footnotes in extracted for footnote in footnotes]
+
+    @classmethod
+    def _convert_footnotes(cls, body: list[str]) -> str:
+        footnotes: list[str] = cls._extract_footnotes(body)
+        body = [cls._mark_footnote(line) for line in body]
+        body.append("\n")
+        body.extend([f'[^{i}]: {footnote}\n'
+                     for i, footnote in enumerate(footnotes, 1)])
+        body_string = "".join(body)
+        for i in range(1, len(footnotes) + 1):
+            body_string = re.sub(rf'__FOOTNOTE__', f'[^{i}]', body_string, count=1)
+        return body_string
+
     def _convert_image_path(self, line: str) -> str:
         # ローカルの画像パス + 幅指定あり
         path = re.sub(rf'!\[(.*)\]\(/(images/{self.article_id}/.*) =([0-9]*)x\)', r'<img src="https://raw.githubusercontent.com/aYukiYoshida/tips/main/\2" alt="\1" width="\3">', line)
@@ -138,13 +165,14 @@ class ZennToQiita(object):
         path = re.sub(rf'!\[(.*)\]\((.*)\)', r'<img src="\2" alt="\1">', path)
         return path
 
-    def _convert_body(self) -> list[str]:
+    def _convert_body(self) -> str:
         body = [self._convert_info_note(line) for line in self.zenn_body]
         body = [self._convert_alert_note(line) for line in body]
         body = [self._convert_image_path(line) for line in body]
-        return body
+        # NOTE: 必ず self._convert_footnotes(body: list[str]) を戻り値にする
+        return self._convert_footnotes(body)
 
-    def _create_qiita_article(self, fm: QiitaFrontMatter, body:list[str]) -> None:
+    def _create_qiita_article(self, fm: QiitaFrontMatter, body_string: str) -> None:
         fm_string = []
         fm_string.append(self.FM_SEPARATOR)
         fm_string.append(f"title: {fm.title}")
@@ -157,7 +185,7 @@ class ZennToQiita(object):
         fm_string.append(f"slide: {str(fm.slide).lower()}")
         fm_string.append(self.FM_SEPARATOR)
         with self.qiita_article.open("w") as f:
-            f.write("\n".join(fm_string) + "".join(body))
+            f.write("\n".join(fm_string) + body_string)
 
     def convert(self) -> None:
         self.logger.info(f"Convert Zenn to Qiita")
