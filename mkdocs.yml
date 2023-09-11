@@ -38,6 +38,8 @@ nav:
         - english/just_remember.md
         - english/adverb.md
         - english/conjunction.md
+not_in_nav: |
+    favorites/drama.md
 theme:
     name: material
     nav_style: dark
