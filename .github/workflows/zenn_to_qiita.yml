@@ -1,0 +1,56 @@
+name: convert-article-of-zenn-to-one-of-qiita
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'articles/*'
+      - 'images/**/*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  PYTHON_VERSION: "3.10"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email actions@github.com
+
+      - name: Checkout main branch in repository
+        uses: actions/checkout@v4
+        with:
+          ref: 'main'
+          fetch-depth: 2
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'poetry'
+
+      - name: Install dependencies
+        run: |
+          poetry install --no-root
+
+      - name: Convert article
+        run: |
+          files=(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD"))
+          for file in ${files[@]}; do
+            if [[ $file =~ ^articles/.*\.md$ ]]; then
+              article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
+              poetry run task z2q $article_id
+            fi
+          done
