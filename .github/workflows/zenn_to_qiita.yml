@@ -43,17 +43,13 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'poetry'
 
-      - name: Install Python dependencies
-        run: |
-          poetry install --no-root
-
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: 'npm'
 
-      - name: Install Node dependencies
+      - name: Install dependencies
         run: |
           npm install
 
