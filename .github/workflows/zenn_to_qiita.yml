@@ -94,7 +94,7 @@ jobs:
               git commit -m "[qiita] Sync article of ${article_id} from Zenn" --no-verify
               git push origin ${branch_name}
               body=$(echo -e "Qiita: ${article}")
-              gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} from Zenn to Qiita" --body ${body}
+              gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} from Zenn to Qiita" --body "${body}"
             fi
           done
         env:
