@@ -66,13 +66,12 @@ class ZennToQiita(object):
 
     def _stamp_synced_qiita_article_id(self) -> None:
         with self.zenn_article.open("a") as f:
-            f.write(f"<!-- qiita article id: {self.qiita_article_id} -->\n")
+            f.write(f"\n<!-- qiita article id: {self.qiita_article_id} -->\n")
 
     def _create_qiita_article(self) -> None:
         fm = QiitaFrontMatter(title="", tags=[], private=True)
         fm.title = self.zenn_front_matter.title
         fm.tags = self.zenn_front_matter.topics
-        fm.private = not self.zenn_front_matter.published
         fm_string = fm.create_string()
         body_string = self._convert_body()
         self._write_out(self.tentative_article, fm_string, body_string)
