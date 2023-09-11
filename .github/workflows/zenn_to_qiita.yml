@@ -11,12 +11,13 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 env:
   PYTHON_VERSION: "3.10"
 
 jobs:
-  deploy:
+  convert:
     runs-on: ubuntu-latest
 
     steps:
@@ -49,8 +50,27 @@ jobs:
         run: |
           files=(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD"))
           for file in ${files[@]}; do
+            echo $file
             if [[ $file =~ ^articles/.*\.md$ ]]; then
               article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
               poetry run task z2q $article_id
             fi
           done
+
+      - name: Commit and push
+        run: |
+          files=(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD"))
+          for file in ${files[@]}; do
+            echo $file
+            if [[ $file =~ ^articles/.*\.md$ ]]; then
+              article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
+              branch_name="qiita-sync-${article_id}-of-zenn"
+              git switch -c ${branch_name}
+              git add ./public/${article_id}.md
+              git commit -m "[qiita] Sync article of ${article_id} from Zenn"
+              git push origin ${branch_name}
+              gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} from Zenn to Qiita" --body "Zenn: ${file}\nQiita: public/${article_id}.md"
+            fi
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
