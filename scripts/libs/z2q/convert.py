@@ -133,7 +133,7 @@ class ZennToQiita(object):
         # ローカルの画像パス + 幅指定なし
         path = re.sub(rf'!\[(.*)\]\(/(images/{self.article_id}/.*)\)', r'<img src="https://raw.githubusercontent.com/aYukiYoshida/tips/main/\2" alt="\1">', path)
         # 画像のURL + 幅指定あり
-        path = re.sub(rf'!\[(.*)\]\((.*) =([0-9]*)x\)', r'<img src="\2" alt="\1" width="\3">', line)
+        path = re.sub(rf'!\[(.*)\]\((.*) =([0-9]*)x\)', r'<img src="\2" alt="\1" width="\3">', path)
         # 画像パスのURL + 幅指定なし
         path = re.sub(rf'!\[(.*)\]\((.*)\)', r'<img src="\2" alt="\1">', path)
         return path
