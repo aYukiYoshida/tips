@@ -62,7 +62,7 @@ jobs:
           QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
         run: |
           mkdir -p ~/.config/qiita-cli/
-          echo '{"default":"qiita","credentials":[{"name":"qiita","accessToken":"'${QIITA_TOKEN}'"}' >| ~/.config/qiita-cli/credentials.json
+          echo '{"default":"qiita","credentials":[{"name":"qiita","accessToken":"'$QIITA_TOKEN'"}]}' >| ~/.config/qiita-cli/credentials.json
 
       - name: Sync article
         run: |
