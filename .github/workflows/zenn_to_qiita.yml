@@ -57,6 +57,13 @@ jobs:
         run: |
           npm install
 
+      - name: Setup Qiita CLI
+        env:
+          QIITA_TOKEN: ${{ secrets.QIITA_TOKEN }}
+        run: |
+          mkdir -p ~/.config/qiita-cli/
+          echo '{"default":"qiita","credentials":[{"name":"qiita","accessToken":"'${QIITA_TOKEN}'"}' >| ~/.config/qiita-cli/credentials.json
+
       - name: Sync article
         run: |
           files=($(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD")))
