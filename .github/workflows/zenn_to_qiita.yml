@@ -1,4 +1,4 @@
-name: convert-article-of-zenn-to-one-of-qiita
+name: sync-articles-from-zenn-to-qiita
 
 on:
   push:
@@ -46,9 +46,9 @@ jobs:
         run: |
           poetry install --no-root
 
-      - name: Convert article
+      - name: Sync article
         run: |
-          files=(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD"))
+          files=($(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD")))
           for file in ${files[@]}; do
             echo $file
             if [[ $file =~ ^articles/.*\.md$ ]]; then
@@ -57,7 +57,7 @@ jobs:
             fi
           done
 
-      - name: Commit and push
+      - name: Create pull requests
         run: |
           files=(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD"))
           for file in ${files[@]}; do
