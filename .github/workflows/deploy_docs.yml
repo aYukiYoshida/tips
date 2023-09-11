@@ -30,6 +30,10 @@ jobs:
         with:
           ref: 'main'
 
+      - name: Fetch gh-pages branch in repository
+        run: |
+          git fetch origin gh-pages
+
       - name: Install Poetry
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
@@ -43,11 +47,6 @@ jobs:
       - name: Install dependencies
         run: |
           poetry install --no-root
-
-      - name: Checkout main branch in repository
-        uses: actions/checkout@v4
-        with:
-            ref: 'gh-pages'
 
       - name: Deploy documents to GitHub Pages
         run: |
