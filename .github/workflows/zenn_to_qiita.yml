@@ -15,6 +15,7 @@ permissions:
 
 env:
   PYTHON_VERSION: "3.10"
+  NODE_VERSION: "18.15.0"
 
 jobs:
   sync:
@@ -42,35 +43,54 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: 'poetry'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           poetry install --no-root
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: |
+          npm install
 
       - name: Sync article
         run: |
           files=($(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD")))
           for file in ${files[@]}; do
-            echo $file
             if [[ $file =~ ^articles/.*\.md$ ]]; then
               article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
               poetry run task z2q $article_id
             fi
           done
 
-      - name: Create pull requests
+      - name: Stamp synced article id to Zenn articles
         run: |
-          files=($(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD")))
-          for file in ${files[@]}; do
-            echo $file
+          articles=$(git diff --no-commit-id --name-only articles)
+          for article in ${articles[@]}; do
             if [[ $file =~ ^articles/.*\.md$ ]]; then
-              article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
-              qiita_article="public/${article_id}.md"
-              branch_name="qiita-sync-${article_id}-of-zenn"
+              article_id=$(echo $article | sed -e 's/articles\/\(.*\)\.md/\1/')
+              git add ${article}
+              git co -m "[zenn] Stamp id of synced article on ${article_id}"
+              git push origin main
+            fi
+          done
+
+      - name: Create pull requests of Qiita articles
+        run: |
+          articles=$(git diff --no-commit-id --name-only public)
+          for article in ${articles[@]}; do
+            if [[ $article =~ ^public/.*\.md$ ]]; then
+              article_id=$(echo $article | sed -e 's/public\/\(.*\)\.md/\1/')
+              branch_name="qiita-${article_id}"
               git switch -c ${branch_name}
-              git add ${qiita_article}
+              git add ${article}
               git commit -m "[qiita] Sync article of ${article_id} from Zenn"
               git push origin ${branch_name}
-              body=echo -e "Zenn: ${file}\nQiita: ${qiita_article}"
+              body=echo -e "Qiita: ${article}"
               gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} from Zenn to Qiita" --body ${body}
             fi
           done
