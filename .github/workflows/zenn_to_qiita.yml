@@ -64,12 +64,13 @@ jobs:
             echo $file
             if [[ $file =~ ^articles/.*\.md$ ]]; then
               article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
+              qiita_article="./public/${article_id}.md"
               branch_name="qiita-sync-${article_id}-of-zenn"
               git switch -c ${branch_name}
-              git add ./public/${article_id}.md
+              git add ${qiita_article}
               git commit -m "[qiita] Sync article of ${article_id} from Zenn"
               git push origin ${branch_name}
-              gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} from Zenn to Qiita" --body "Zenn: ${file}\nQiita: public/${article_id}.md"
+              gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} from Zenn to Qiita" --body "Zenn: ${file}\nQiita: ${qiita_article}"
             fi
           done
         env:
