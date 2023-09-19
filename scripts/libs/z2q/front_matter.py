@@ -18,6 +18,7 @@ class QiitaFrontMatter(BaseModel):
     id: str = "null"
     organization_url_name: str = "null"
     slide: bool = False
+    ignore_publish: bool = False
 
     def create_string(self) -> str:
         fm_string: deque[str] = deque([])
@@ -30,5 +31,6 @@ class QiitaFrontMatter(BaseModel):
         fm_string.append(f"id: {self.id}")
         fm_string.append(f"organization_url_name: {self.organization_url_name}")
         fm_string.append(f"slide: {str(self.slide).lower()}")
+        fm_string.append(f"ignorePublish: {str(self.ignore_publish).lower()}")
         fm_string.append(FM_SEPARATOR)
         return "\n".join(fm_string)
