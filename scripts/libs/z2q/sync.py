@@ -84,7 +84,7 @@ class ZennToQiita(object):
             raise RuntimeError(f"Failed to create a new Qiita article: {completed_proc.stderr}")
         fm = self._extract_qiita_front_matter(self.tentative_article)
         self._qiita_article_id = fm.id
-        self.tentative_article.unlink()
+        self.tentative_article.rename(self.qiita_article)
 
     def _extract_zenn_front_matter(self) -> ZennFrontMatter:
         with self.zenn_article.open("r") as f:
@@ -215,7 +215,7 @@ class ZennToQiita(object):
     def sync(self) -> None:
         self.logger.info(f"Convert Zenn to Qiita")
         if self._does_zenn_article_exist():
-            self.logger.info(f"Zenn article:  {self.zenn_article}")
+            self.logger.info(f"Zenn article: {self.zenn_article}")
         else:
             raise FileNotFoundError(f"{self.zenn_article} does not exist.")
 
