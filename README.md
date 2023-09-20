@@ -27,7 +27,7 @@
 
 ## Commands
 
-### For mkdocs
+### for mkdocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -61,9 +61,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
   poetry run mkdocs -h
   ```
 
-### For zenn
+### for Zenn
 
-- Create a new project
+- Create a new project (only at first time; not required)
 
   ```shell
   npx zenn init
@@ -81,9 +81,12 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
   npx zenn preview --port 3000
   ```
 
-### For qiita
+### for Qiita
 
-- Create a new project
+The following commands for Qiita do not need to be executed manually because the articles of Qiita are managed by the GitHub Actions.
+These are provided for reference only.
+
+- Create a new project (only at first time; not required)
 
   ```shell
   npx qiita init
@@ -101,15 +104,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
   npx qiita preview
   ```
 
-### Convert articles
-
-- Convert articles from Zenn to Qiita
-
-  ```shell
-  npm run z2q <ARTICLE_ID>
-  ```
-
-## Project layout
+## Project Layout
 
 ```text
 mkdocs.yml    # The configuration file.
@@ -120,6 +115,29 @@ articles      # Articles for Zenn
 books         # Books for Zenn
 public        # Articles for Qiita
 ```
+
+## Sync Articles between Zenn and Qiita
+
+### Workflow
+
+1. Zenn の記事を新規に作成する。もしくは、既存の記事を更新する。
+2. Zenn の記事の新規作成もしくは、更新についてコミットする。
+3. 前述のコミットを main ブランチに push する。
+4. main ブランチでの変更が検知され Zennが提供する機能により自動でデプロイされる。
+5. main ブランチでの変更が検知され GitHub Actions の [sync-articles-from-zenn-to-qiita](./.github/workflows/zenn_to_qiita.yml) のワークフローにより、Zenn の記事が Qiita に自動で変換される。
+   1. 同期する Qiita の記事が存在しない場合は、新規に作成され、その id が Zenn の記事の末尾に追記される。この Zenn の記事の変更については、自動でコミットされる。
+   2. 新規作成もしくは、更新によらず Qiita の記事の変更についてのプルリクエストが作成される。
+6. Qiita の記事の変更について、プルリクエストをマージする。
+7. main ブランチでの変更が検知され GitHub Actions の [publish-qiita-articles](./.github/workflows/publish_qiita_articles.yml) のワークフローにより、Qiita の記事が自動で公開される。
+   1. このとき Qiita CLI により front matter が更新される。この Qiita の記事の変更については、自動でコミットされる。
+
+### Convert Article Command
+
+- Convert article of Zenn to that of Qiita
+
+  ```shell
+  npm run z2q <ARTICLE_ID>
+  ```
 
 ## Reference
 
