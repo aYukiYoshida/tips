@@ -69,7 +69,7 @@ class ZennToQiita(object):
             f.write(f"\n<!-- qiita article id: {self.qiita_article_id} -->\n")
 
     def _stamp_synced_zenn_article_id(self, body: list[str]) -> list[str]:
-        return body + [f"<!-- zenn article id: {self.zenn_article_id} -->\n"]
+        return body + [f"\n<!-- zenn article id: {self.zenn_article_id} -->\n"]
 
     def _create_qiita_article(self) -> None:
         fm = QiitaFrontMatter(title="", tags=[], private=True)
