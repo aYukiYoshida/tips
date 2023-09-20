@@ -91,7 +91,7 @@ jobs:
               branch_name="qiita-${article_id}"
               git switch -c ${branch_name}
               git add ${file}
-              git commit -m "[qiita] Sync article of ${article_id} to Qiita" --no-verify
+              git commit -m "[qiita] Sync Qiita article of ${article_id}" --no-verify
               git push origin ${branch_name}
               body=$(echo -e "Qiita: ${file}")
               gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} to Qiita" --body "${body}"
