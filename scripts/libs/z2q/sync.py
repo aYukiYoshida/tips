@@ -180,13 +180,16 @@ class ZennToQiita(object):
     @classmethod
     def _convert_footnotes(cls, body: list[str]) -> str:
         footnotes: list[str] = cls._extract_footnotes(body)
-        body = [cls._mark_footnote(line) for line in body]
-        body.append("\n")
-        body.extend([f'[^{i}]: {footnote}\n'
-                     for i, footnote in enumerate(footnotes, 1)])
-        body_string = "".join(body)
-        for i in range(1, len(footnotes) + 1):
-            body_string = re.sub(rf'__FOOTNOTE__', f'[^{i}]', body_string, count=1)
+        if len(footnotes):
+            body = [cls._mark_footnote(line) for line in body]
+            body.append("\n")
+            body.extend([f'[^{i}]: {footnote}\n'
+                        for i, footnote in enumerate(footnotes, 1)])
+            body_string = "".join(body)
+            for i in range(1, len(footnotes) + 1):
+                body_string = re.sub(rf'__FOOTNOTE__', f'[^{i}]', body_string, count=1)
+        else:
+            body_string = "".join(body)
         return body_string
 
     def _convert_image_path(self, line: str) -> str:
