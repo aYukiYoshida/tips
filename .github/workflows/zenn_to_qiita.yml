@@ -72,7 +72,7 @@ jobs:
 
       - name: Stamp synced article id to Zenn articles
         run: |
-          files=$(git status --short --untracked-files|cut -d ' ' -f2)
+          files=$(git status --short --untracked-files|awk '{print $2}')
           for file in ${files[@]}; do
             if [[ ${file} =~ ^articles/.*\.md$ ]]; then
               article_id=$(echo ${file} | sed -e 's/articles\/\(.*\)\.md/\1/')
@@ -84,7 +84,7 @@ jobs:
 
       - name: Create pull requests of Qiita articles
         run: |
-          files=$(git status --short --untracked-files|cut -d ' ' -f2)
+          files=$(git status --short --untracked-files|awk '{print $2}')
           for file in ${files[@]}; do
             if [[ ${file} =~ ^public/.*\.md$ ]]; then
               article_id=$(echo ${file} | sed -e 's/public\/\(.*\)\.md/\1/')
