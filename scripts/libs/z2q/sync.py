@@ -68,6 +68,9 @@ class ZennToQiita(object):
         with self.zenn_article.open("a") as f:
             f.write(f"\n<!-- qiita article id: {self.qiita_article_id} -->\n")
 
+    def _stamp_synced_zenn_article_id(self, body: list[str]) -> list[str]:
+        return body + [f"<!-- zenn article id: {self.zenn_article_id} -->\n"]
+
     def _create_qiita_article(self) -> None:
         fm = QiitaFrontMatter(title="", tags=[], private=True)
         fm.title = self.zenn_front_matter.title
@@ -163,6 +166,10 @@ class ZennToQiita(object):
         return re.sub(r'^:::message alert$', r':::note alert', line)
 
     @classmethod
+    def _remove_synced_qiita_article_id(cls, line: str) -> str:
+        return re.sub(r'<!-- qiita article id: .* -->\n', '', line)
+
+    @classmethod
     def _mark_footnote(cls, line: str) -> str:
         return re.sub(r'\^\[.*\]', '__FOOTNOTE__', line)
 
@@ -207,6 +214,8 @@ class ZennToQiita(object):
         body = [self._convert_info_note(line) for line in self.zenn_body]
         body = [self._convert_alert_note(line) for line in body]
         body = [self._convert_image_path(line) for line in body]
+        body = [self._remove_synced_qiita_article_id(line) for line in body]
+        body = self._stamp_synced_zenn_article_id(body)
         # NOTE: 必ず self._convert_footnotes(body: list[str]) を戻り値にする
         return self._convert_footnotes(body)
 
