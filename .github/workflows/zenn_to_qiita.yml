@@ -62,21 +62,21 @@ jobs:
 
       - name: Sync article
         run: |
-          files=($(git diff-tree --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD")))
+          files=($(git diff --no-commit-id --name-only -r $(git rev-parse "HEAD^") $(git rev-parse "HEAD")))
           for file in ${files[@]}; do
             if [[ $file =~ ^articles/.*\.md$ ]]; then
               article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
-              poetry run task z2q $article_id
+              npm run z2q $article_id
             fi
           done
 
       - name: Stamp synced article id to Zenn articles
         run: |
-          articles=$(git diff --no-commit-id --name-only articles)
-          for article in ${articles[@]}; do
-            if [[ $article =~ ^articles/.*\.md$ ]]; then
-              article_id=$(echo $article | sed -e 's/articles\/\(.*\)\.md/\1/')
-              git add ${article}
+          files=$(git status --short --untracked-files|cut -d ' ' -f2)
+          for file in ${files[@]}; do
+            if [[ ${file} =~ ^articles/.*\.md$ ]]; then
+              article_id=$(echo ${file} | sed -e 's/articles\/\(.*\)\.md/\1/')
+              git add ${file}
               git commit -m "[zenn] Stamp id of synced article on ${article_id}" --no-verify
               git push origin main
             fi
@@ -84,16 +84,16 @@ jobs:
 
       - name: Create pull requests of Qiita articles
         run: |
-          articles=$(git diff --no-commit-id --name-only public)
-          for article in ${articles[@]}; do
-            if [[ $article =~ ^public/.*\.md$ ]]; then
-              article_id=$(echo $article | sed -e 's/public\/\(.*\)\.md/\1/')
+          files=$(git status --short --untracked-files|cut -d ' ' -f2)
+          for file in ${files[@]}; do
+            if [[ ${file} =~ ^public/.*\.md$ ]]; then
+              article_id=$(echo ${file} | sed -e 's/public\/\(.*\)\.md/\1/')
               branch_name="qiita-${article_id}"
               git switch -c ${branch_name}
-              git add ${article}
+              git add ${file}
               git commit -m "[qiita] Sync article of ${article_id} to Qiita" --no-verify
               git push origin ${branch_name}
-              body=$(echo -e "Qiita: ${article}")
+              body=$(echo -e "Qiita: ${file}")
               gh pr create --base main --head ${branch_name} --title "Sync article of ${article_id} to Qiita" --body "${body}"
             fi
           done
