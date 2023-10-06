@@ -4,6 +4,7 @@
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
+|[転職の魔王様](https://www.ktv.jp/tenshokumao/)|月22|フジ|7/17放送開始|
 |[こっち向いてよ向井くん](https://www.ntv.co.jp/mukaikun/)|水22|日テレ|7/12放送開始|
 |[彼女たちの犯罪](https://www.ytv.co.jp/kanojohanzai/)|木24|テレ朝|7/20放送開始|
 |[警部補ダイマジン](https://www.tv-asahi.co.jp/daimajin/)|金23|テレ朝|7/7放送開始|
