@@ -1,5 +1,16 @@
 # DRAMA
 
+## 2023/10-12 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[ONE DAY〜聖夜のから騒ぎ〜](https://www.fujitv.co.jp/oneday_christmas_ado/)|月21|フジ|10/9放送開始|
+|[コタツがない家](https://www.ntv.co.jp/kotatsuganaiie/)|水22|日テレ|10/18放送開始|
+|[ミワさんなりすます](https://www.nhk.jp/p/ts/5GWLQJPMR4/)|木22|NHK|10/16放送開始|
+|[最高の教師 1年後、私は生徒に■された](https://www.ntv.co.jp/saikyo/)|土22|日テレ|7/15放送開始|
+|[下剋上球児](https://www.tbs.co.jp/gekokujo_kyuji_tbs/)|日21|TBS|10/15放送開始|
+|[セクシー田中さん](https://www.ntv.co.jp/tanakasan/)|日22|日テレ|10/22放送開始|
+
 ## 2023/07-09 season
 
 |title|on-air datetime|Broadcaster|comments|
