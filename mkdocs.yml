@@ -30,6 +30,7 @@ nav:
         - Make LaTeX formulas online images: latex/online_equation.md
     - Testing:
         - automated testing: testing/automated_testing.md
+        - Playwright: testing/playwright.md
     - WebFrontEnd:
         - HTML:
             - inline-block: webfrontend/html/inline_block.md
