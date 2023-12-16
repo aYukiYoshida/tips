@@ -84,7 +84,7 @@ class ZennToQiita(object):
             "--root", self.ROOT.as_posix()],
             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if completed_proc.returncode != 0:
-            raise RuntimeError(f"Failed to create a new Qiita article: {completed_proc.stderr}")
+            raise RuntimeError(f"Failed to create a new Qiita article: {completed_proc.stderr!r}")
         fm = self._extract_qiita_front_matter(self.tentative_article)
         self._qiita_article_id = fm.id
         self.tentative_article.rename(self.qiita_article)
