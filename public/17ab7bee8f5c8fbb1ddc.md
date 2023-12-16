@@ -1,13 +1,13 @@
 ---
 title: Playwright で Page Object Model を使用するときのちょっとした工夫
 tags:
-  - playwright
-  - typescript
-  - test
+  - テスト
+  - Web
+  - TypeScript
   - testing
-  - web
+  - Playwright
 private: true
-updated_at: '2023-12-16T23:12:45+09:00'
+updated_at: '2023-12-16T23:16:46+09:00'
 id: 17ab7bee8f5c8fbb1ddc
 organization_url_name: null
 slide: false
