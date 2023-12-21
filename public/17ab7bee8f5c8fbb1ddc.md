@@ -7,7 +7,7 @@ tags:
   - testing
   - Playwright
 private: false
-updated_at: '2023-12-21T22:29:11+09:00'
+updated_at: '2023-12-21T22:33:21+09:00'
 id: 17ab7bee8f5c8fbb1ddc
 organization_url_name: access
 slide: false
