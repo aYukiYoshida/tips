@@ -1,11 +1,11 @@
 ---
 title: Playwright で Page Object Model を使用するときのちょっとした工夫
 tags:
-  - テスト
-  - Web
-  - TypeScript
+  - playwright
+  - typescript
+  - test
   - testing
-  - Playwright
+  - web
 private: true
 updated_at: '2023-12-18T10:09:35+09:00'
 id: 17ab7bee8f5c8fbb1ddc
@@ -16,7 +16,7 @@ ignorePublish: false
 ## はじめに
 
 本記事は、[株式会社ACCESS Advent Calendar 2023](https://qiita.com/advent-calendar/2023/access) の22日目の記事です。
-Playwright における Page Object Model を使用方法が公式ドキュメントに[ガイド](https://playwright.dev/docs/pom)として、紹介されている。
+Playwright における Page Object Model の使用方法が公式ドキュメントに[ガイド](https://playwright.dev/docs/pom)として、紹介されている。
 本記事ではさらに Playwright で Page Object Model を使用するときのちょっとした工夫について紹介する。
 
 ## コード
@@ -115,10 +115,12 @@ test('should be able to login', async ({ loginPage }) => {
 ```
 
 Fixture を使用することで Fixture を呼び出すたびに Page Object のクラスのインスタンスの生成が実行される。
+実はこの実装方法は、公式ドキュメントの [Fixtures](https://playwright.dev/docs/test-fixtures#creating-a-fixture) にしれっと記載されている...。
 
 ## さいごに
 
 Playwright で Page Object Model を使用する際のちょっとした工夫について紹介した。結局のところ、この記事の味噌は Fixture の使用方法についての紹介となったが、テストケースの前後の処理などにも使用できるため、ぜひ活用してみてほしい。
 明日は @Momijinn さんの記事です。お楽しみに！
+
 
 <!-- zenn article id: 70698527ec7bf0 -->
