@@ -1,5 +1,11 @@
 # DRAMA
 
+## 2024/01-03 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[正直不動産2](https://www.nhk.jp/p/ts/5GKZ6NXYVM/)|火22|NHK|1/9放送開始|
+
 ## 2023/10-12 season
 
 |title|on-air datetime|Broadcaster|comments|
