@@ -5,6 +5,7 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[正直不動産2](https://www.nhk.jp/p/ts/5GKZ6NXYVM/)|火22|NHK|1/9放送開始|
+|[不適切にもほどがある！](https://www.tbs.co.jp/futekisetsunimohodogaaru/)|金22|TBS|1/26放送開始|
 
 ## 2023/10-12 season
 
