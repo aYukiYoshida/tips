@@ -7,9 +7,7 @@
 
 ## Requirements
 
-- [Node.js](https://nodejs.org)
-- [Python](https://www.python.org/)
-- [Poetry](https://python-poetry.org)
+- [mise](https://mise.jdx.dev/)
 
 ## Setup
 
@@ -22,7 +20,13 @@
 2. Install packages
 
     ```shell
-    npm install
+    mise install
+    ```
+
+3. Install dependencies
+
+    ```shell
+    mise run setup
     ```
 
 ## Commands
