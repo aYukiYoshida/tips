@@ -3,7 +3,7 @@ title: "mise で Nodejs を管理する環境で Playwright Test for VSCode 使�
 emoji: "🎭"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["mise", "playwright", "vscode"]
-published: false
+published: true
 ---
 
 ## はじめに
