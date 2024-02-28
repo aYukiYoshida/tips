@@ -47,3 +47,5 @@ fi
 ## おわりに
 
 VSCode と Playwright Test for VSCode と具体的な環境によるエラーについて記述しましたが、 mise で管理する環境下で他のパッケージを ほかの IDE で使用する場合にも同様のエラーが発生する可能性があると思います。mise のアクティベートと shims を PATH に追加する処理を profile ファイルと rc ファイルそれぞれに記述することでエラーを回避できるかもしれません。
+
+<!-- qiita article id: a8cb3d75e08d64baf9b4 -->
