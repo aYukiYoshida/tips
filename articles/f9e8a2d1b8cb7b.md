@@ -24,7 +24,7 @@ Unable to find 'node' executable. Make sure to have Node.js installed and availa
 
 ## 原因
 
-筆者の環境ではログインシェルに `zsh` を使用していました。この環境下で `mise` をアクティベートするために `$HOME/.zshrc` に以下のように記述していました。
+筆者の環境ではログインシェルに `zsh` を使用していました。この環境下で `mise` をアクティベートするために [mise のドキュメント](https://mise.jdx.dev/getting-started.html#_2a-activate-mise)に従って `$HOME/.zshrc` に以下のように記述していました。
 
 ``` shell
 if command -v mise 1>/dev/null 2>&1; then
