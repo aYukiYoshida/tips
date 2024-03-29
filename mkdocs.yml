@@ -35,6 +35,7 @@ nav:
         - HTML:
             - inline-block: webfrontend/html/inline_block.md
     - English:
+        - english/appreciate.md
         - english/one_that.md
         - english/just_remember.md
         - english/adverb.md
