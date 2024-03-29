@@ -40,8 +40,8 @@ nav:
         - english/just_remember.md
         - english/adverb.md
         - english/conjunction.md
-    - Favorites
-        - favorites/draemon.md
+    - Favorites:
+        - 心に残る名言: favorites/word_of_wisdom.md
 not_in_nav: |
     favorites/drama.md
 theme:
