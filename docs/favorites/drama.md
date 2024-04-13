@@ -1,5 +1,13 @@
 # DRAMA
 
+## 2024/04-06 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[ブルーモーメント](https://www.fujitv.co.jp/blue-moment/)|水22|フジ|4/24放送開始|
+|[９ボーダー](https://www.tbs.co.jp/9border_tbs/)|金22|TBS|4/19放送開始|
+|[アンチヒーロー](https://www.tbs.co.jp/antihero_tbs/)|日21|TBS|4/14放送開始|
+
 ## 2024/01-03 season
 
 |title|on-air datetime|Broadcaster|comments|
