@@ -52,6 +52,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+          poetry install
 
       - name: Setup Qiita CLI
         env:
@@ -66,7 +67,7 @@ jobs:
           for file in ${files[@]}; do
             if [[ $file =~ ^articles/.*\.md$ ]]; then
               article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
-              npm run z2q $article_id
+              poetry run task z2q $article_id
             fi
           done
 
