@@ -127,13 +127,12 @@ public        # Articles for Qiita
 1. Zenn の記事を新規に作成する。もしくは、既存の記事を更新する。
 2. Zenn の記事の新規作成もしくは、更新についてコミットする。
 3. 前述のコミットを main ブランチに push する。
-4. main ブランチでの変更が検知され Zennが提供する機能により自動でデプロイされる。
-5. main ブランチでの変更が検知され GitHub Actions の [sync-articles-from-zenn-to-qiita](./.github/workflows/zenn_to_qiita.yml) のワークフローにより、Zenn の記事が Qiita に自動で変換される。
-   1. 同期する Qiita の記事が存在しない場合は、新規に作成され、その id が Zenn の記事の末尾に追記される。この Zenn の記事の変更については、自動でコミットされる。
-   2. 新規作成もしくは、更新によらず Qiita の記事の変更についてのプルリクエストが作成される。
-6. Qiita の記事の変更について、プルリクエストをマージする。
-7. main ブランチでの変更が検知され GitHub Actions の [publish-qiita-articles](./.github/workflows/publish_qiita_articles.yml) のワークフローにより、Qiita の記事が自動で公開される。
-   1. このとき Qiita CLI により front matter が更新される。この Qiita の記事の変更については、自動でコミットされる。
+4. main ブランチでの変更が検知され Zenn が提供する機能により自動でデプロイされる。
+5. main ブランチでの変更により [sync-articles-from-zenn-to-qiita](./.github/workflows/zenn_to_qiita.yml) のワークフローが実行される。以下の処理が実行される。
+   1. Zenn の記事が Qiita に変換する。
+   2. 同期する Qiita の記事が存在しない場合は、新規に作成され、その id が Zenn の記事の末尾に追記される。この Zenn の記事の変更について、コミットする。
+   3. 新規作成もしくは、更新によらず Qiita の記事の変更について、コミットする。
+   4. Qiita の記事を公開する。このとき Qiita CLI により front matter が更新される。この Qiita の記事の変更については、自動でコミットされる。
 
 ### Convert Article Command
 
@@ -143,8 +142,14 @@ public        # Articles for Qiita
   npm run z2q <ARTICLE_ID>
   ```
 
-## Reference
+## Guide
 
-- [MkDocsによるドキュメント作成 - Qiita](https://qiita.com/mebiusbox2/items/a61d42878266af969e3c)
-- [GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
-- [Qiita CLI](https://github.com/increments/qiita-cli)
+- MkDocs
+  - <https://www.mkdocs.org/>
+- Zenn
+  - [GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
+  - [Markdown記法](https://zenn.dev/zenn/articles/markdown-guide)
+  - [CLI](https://zenn.dev/zenn/articles/zenn-cli-guide)
+- Qiita
+  - [Markdown記法](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)
+  - [CLI](https://github.com/increments/qiita-cli)
