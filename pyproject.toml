@@ -24,3 +24,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
 z2q = { cmd = "python ./scripts/z2q.py", help = "Convert article of Zenn to one of Qiita" }
+build-docs = { cmd = "mkdocs build", help = "Build documentation" }
+preview-docs = { cmd = "mkdocs serve", help = "Preview documentation" }
+deploy-docs = { cmd = "mkdocs gh-deploy", help = "Deploy documentation" }

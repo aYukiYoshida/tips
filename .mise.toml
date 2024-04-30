@@ -3,5 +3,24 @@ python = "3.10"
 node = "18.15.0"
 poetry = "1.8.2"
 
-[tasks.setup]
+[tasks."setup:nodejs"]
 run = "npm install"
+[tasks."setup:python"]
+run = "poetry install"
+[tasks."setup:pre-commit"]
+run = "poetry run pre-commit install"
+depends = ["setup:python"]
+[tasks.setup]
+depends = ["setup:*"]
+[tasks."create:zenn"]
+run = "npm run create:zenn"
+[tasks."create:qiita"]
+run = "npm run create:qiita"
+[tasks."preview:docs"]
+run = "poetry run task preview-docs"
+[tasks."preview:zenn"]
+run = "npm run preview:zenn"
+[tasks."preview:qiita"]
+run = "npm run preview:qiita"
+[tasks.z2q]
+run = "poetry run task z2q"

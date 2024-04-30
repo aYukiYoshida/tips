@@ -7,11 +7,11 @@
     "doc": "docs"
   },
   "scripts": {
-    "prepare": "failsafe prepare:poetry prepare:pre-commit",
-    "prepare:poetry": "poetry install",
-    "prepare:pre-commit": "poetry run pre-commit install",
-    "z2q": "poetry run task z2q",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preview:zenn": "zenn preview --port 3000",
+    "preview:qiita": "qiita preview",
+    "create:zenn": "zenn new:article",
+    "create:qiita": "qiita new"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,6 @@
   "homepage": "https://github.com/aYukiYoshida/tips#readme",
   "dependencies": {
     "@qiita/qiita-cli": "^1.3.0",
-    "npm-failsafe": "^1.0.0",
-    "zenn-cli": "^0.1.150"
+    "zenn-cli": "^0.1.153"
   }
 }
