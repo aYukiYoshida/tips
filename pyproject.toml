@@ -11,7 +11,7 @@ python = "^3.10"
 mkdocs = "^1.5.2"
 mkdocs-material = "^8.3.8"
 pre-commit = "^2.19.0"
-pydantic = "^2.3.0"
+pydantic = "^2.4.0"
 pydantic-settings = "^2.0.3"
 taskipy = "^1.12.0"
 
