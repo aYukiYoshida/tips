@@ -1,16 +1,16 @@
 name: sync-articles-from-zenn-to-qiita
 
 on:
-  pull_request:
-    types:
-      - opened
+  push:
+    branches:
+      - main
     paths:
       - 'articles/*'
       - 'images/**/*'
+  workflow_dispatch:
 
 permissions:
   contents: write
-  pull-requests: write
 
 env:
   PYTHON_VERSION: "3.10"
