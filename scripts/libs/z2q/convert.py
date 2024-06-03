@@ -82,7 +82,8 @@ class ZennToQiita(object):
             self.QIITA_CLI.as_posix(),
             "publish", self.zenn_article_id,
             "--root", self.ROOT.as_posix()],
-            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            check=False)
         if completed_proc.returncode != 0:
             raise RuntimeError(f"Failed to create a new Qiita article: {completed_proc.stderr!r}")
         fm = self._extract_qiita_front_matter(self.tentative_article)
@@ -194,7 +195,7 @@ class ZennToQiita(object):
                         for i, footnote in enumerate(footnotes, 1)])
             body_string = "".join(body)
             for i in range(1, len(footnotes) + 1):
-                body_string = re.sub(rf'__FOOTNOTE__', f'[^{i}]', body_string, count=1)
+                body_string = re.sub(r'__FOOTNOTE__', f'[^{i}]', body_string, count=1)
         else:
             body_string = "".join(body)
         return body_string
@@ -205,9 +206,9 @@ class ZennToQiita(object):
         # ローカルの画像パス + 幅指定なし
         path = re.sub(rf'!\[(.*)\]\(/(images/{self.zenn_article_id}/.*)\)', r'<img src="https://raw.githubusercontent.com/aYukiYoshida/tips/main/\2" alt="\1">', path)
         # 画像のURL + 幅指定あり
-        path = re.sub(rf'!\[(.*)\]\((.*) =([0-9]*)x\)', r'<img src="\2" alt="\1" width="\3">', path)
+        path = re.sub(r'!\[(.*)\]\((.*) =([0-9]*)x\)', r'<img src="\2" alt="\1" width="\3">', path)
         # 画像パスのURL + 幅指定なし
-        path = re.sub(rf'!\[(.*)\]\((.*)\)', r'<img src="\2" alt="\1">', path)
+        path = re.sub(r'!\[(.*)\]\((.*)\)', r'<img src="\2" alt="\1">', path)
         return path
 
     def _convert_body(self) -> str:
@@ -224,22 +225,22 @@ class ZennToQiita(object):
         with file_path.open("w") as f:
             f.write(fm + body)
 
-    def sync(self) -> None:
-        self.logger.info(f"Convert Zenn to Qiita")
+    def convert(self) -> None:
+        self.logger.info("Convert Zenn to Qiita")
         if self._does_zenn_article_exist():
-            self.logger.info(f"Zenn article: {self.zenn_article}")
+            self.logger.info("Zenn article: %s", self.zenn_article)
         else:
             raise FileNotFoundError(f"{self.zenn_article} does not exist.")
 
         _synced_qiita_article_id = self._get_synced_qiita_article_id()
         if _synced_qiita_article_id is None:
             self._create_qiita_article()
-            self.logger.info(f"Qiita article: {self.qiita_article}")
+            self.logger.info("Qiita article: %s", self.qiita_article)
             self._stamp_synced_qiita_article_id()
         else:
             self._qiita_article_id = _synced_qiita_article_id
             if self._does_qiita_article_exist():
-                self.logger.info(f"Qiita article: {self.qiita_article}")
+                self.logger.info("Qiita article: %s", self.qiita_article)
             else:
                 raise FileNotFoundError(f"{self.qiita_article} does not exist.")
         fm = self._convert_front_matter()
