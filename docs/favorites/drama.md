@@ -5,7 +5,6 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[新宿野戦病院](https://www.fujitv.co.jp/shinjuku-yasen)|水22|フジ|7/3放送開始|
-|[ギークス 〜警察署の変人たち〜](https://www.fujitv.co.jp/geeks)|木22|TBS|7/4放送開始|
 
 ## 2024/04-06 season
 
