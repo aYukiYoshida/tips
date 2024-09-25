@@ -4,7 +4,8 @@
 
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
-|[民王®️](https://www.tv-asahi.co.jp/tamiou/)|火21|テレ朝|10/dd放送開始|
+|[嘘解きレトリック](https://www.fujitv.co.jp/usotoki/)|月21|フジ|10/7放送開始|
+|[民王®️](https://www.tv-asahi.co.jp/tamiou/)|火21|テレ朝|10/22放送開始|
 |[全領域異常解決室](https://www.fujitv.co.jp/zenketsu/)|水22|フジ|10/9放送開始|
 |[放課後カルテ](https://www.ntv.co.jp/houkagokarte/)|土21|日テレ|10/12放送開始|
 |[海に眠るダイヤモンド](https://www.tbs.co.jp/umininemuru_diamond_tbs/)|日21|TBS|10/dd放送開始|
