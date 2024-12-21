@@ -9,6 +9,7 @@
 |[全領域異常解決室](https://www.fujitv.co.jp/zenketsu/)|水22|フジ|10/9放送開始|
 |[放課後カルテ](https://www.ntv.co.jp/houkagokarte/)|土21|日テレ|10/12放送開始|
 |[3000万](https://www.nhk.jp/p/ts/9L69M8XJVX/)|土22|NHK|10/5放送開始|
+|[海に眠るダイヤモンド](https://www.tbs.co.jp/umininemuru_diamond_tbs/)|日21|TBS|10/20放送開始|
 |[若草物語 恋する姉妹と恋せぬ私](https://www.ntv.co.jp/wakakusa/)|日22|日テレ|10/6放送開始|
 
 ## 2024/07-09 season
