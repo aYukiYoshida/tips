@@ -1,6 +1,6 @@
 [tools]
 python = "3.10"
-node = "18.15.0"
+node = "20.18.1"
 poetry = "1.8.2"
 
 [tasks."setup:nodejs"]
