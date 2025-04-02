@@ -5,7 +5,8 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[119エマージェンシーコール](https://www.fujitv.co.jp/119emcall/)|月21|フジ|1/13放送開始|
-|[まどか26歳、研修医やってます!](https://www.tbs.co.jp/madoka26_tbs/)|火21|テレ朝|10/22放送開始|
+|[まどか26歳、研修医やってます!](https://www.tbs.co.jp/madoka26_tbs/)|火22|TBS|1/14放送開始|
+|[クジャクのダンス、誰が見た？](https://www.tbs.co.jp/kujakunodance_tbs/)|金22|TBS|1/24放送開始|
 |[御上先生](https://www.tbs.co.jp/mikami_sensei_tbs/)|日21|TBS|1/19放送開始|
 |[ホットスポット](https://www.ntv.co.jp/hotspot/)|日22|日テレ|1/12放送開始|
 
