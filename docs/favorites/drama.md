@@ -5,6 +5,7 @@
 |title|on-air datetime|Broadcaster|comments|
 |:-|:-|:-|:-|
 |[続・続・最後から二番目の恋](https://www.fujitv.co.jp/nibanmeno_koi/)|月21|フジ|4/14放送開始|
+|[夫よ、しんでくれないか](https://www.tv-tokyo.co.jp/otoshine/)|月23|テレ東|4/7放送開始|
 |[対岸の家事～これが、私の生きる道！～](https://www.tbs.co.jp/taigannokaji_tbs/)|火22|TBS|4/1放送開始|
 |[キャスター](https://www.tbs.co.jp/mikami_sensei_tbs/)|日21|TBS|4/13放送開始|
 
