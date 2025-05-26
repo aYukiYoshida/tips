@@ -26,6 +26,6 @@
   "homepage": "https://github.com/aYukiYoshida/tips#readme",
   "dependencies": {
     "@qiita/qiita-cli": "^1.4.1",
-    "zenn-cli": "^0.1.158"
+    "zenn-cli": "^0.1.159"
   }
 }
