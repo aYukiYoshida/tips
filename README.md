@@ -7,13 +7,13 @@
 <!-- markdownlint-disable MD033 -->
 <div align="center" style="display: flex; justify-content: space-around;">
   <a href="https://ayukiyoshida.github.io/tips/">
-      <img src="docs/images/tips.png" alt="french-fry" width=auto height=72px object-fit=contain/>
+      <img src="docs/images/tips.png" alt="french-fry" style="width: auto; height: 72px; object-fit: contain;"/>
   </a>
   <a href="https://zenn.dev/jyoppomu">
-      <img src="docs/images/zenn-logo.png" alt="zenn-logo" width=auto height=72px object-fit=contain/>
+      <img src="docs/images/zenn-logo.png" alt="zenn-logo" style="width: auto; height: 72px; object-fit: contain;"/>
   </a>
   <a href="https://qiita.com/jyoppomu">
-      <img src="docs/images/qitta-logo.png" alt="qiita-log" width=auto height=72px object-fit=contain/>
+      <img src="docs/images/qitta-logo.png" alt="qiita-log" style="width: auto; height: 72px; object-fit: contain;"/>
   </a>
 </div>
 
