@@ -1,9 +1,21 @@
 # TIPS
 
-## Link to deployed page
+[![MkDocs](https://img.shields.io/badge/MkDocs-1.5.2-blue.svg)](https://www.mkdocs.org/)
+
+## Articles
 
 <!-- markdownlint-disable MD033 -->
-<kbd><a href="https://ayukiyoshida.github.io/tips/">Click to me !!</a></kbd>
+<div align="center" style="display: flex; justify-content: space-around;">
+  <a href="https://ayukiyoshida.github.io/tips/">
+      <img src="docs/images/tips.png" alt="french-fry" width=auto height=72px object-fit=contain/>
+  </a>
+  <a href="https://zenn.dev/jyoppomu">
+      <img src="docs/images/zenn-logo.png" alt="zenn-logo" width=auto height=72px object-fit=contain/>
+  </a>
+  <a href="https://qiita.com/jyoppomu">
+      <img src="docs/images/qitta-logo.png" alt="qiita-log" width=auto height=72px object-fit=contain/>
+  </a>
+</div>
 
 ## Requirements
 
