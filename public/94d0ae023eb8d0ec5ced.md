@@ -1,11 +1,11 @@
 ---
 title: AppiumでAndroidのToastを無理やり取得する
 tags:
-  - Appium
   - Android
-  - test
+  - テスト
+  - appium
 private: false
-updated_at: '2025-08-20T16:29:17+09:00'
+updated_at: '2025-08-20T16:29:27+09:00'
 id: 94d0ae023eb8d0ec5ced
 organization_url_name: null
 slide: false
