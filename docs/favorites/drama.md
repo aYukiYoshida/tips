@@ -1,5 +1,15 @@
 # DRAMA
 
+## 2025/10-12 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[僕達はまだその星の校則を知らない](https://www.ktv.jp/bokuhoshi/)|月22|フジ|7/14放送開始|
+|[ちょっとだけエスパー](https://www.tv-asahi.co.jp/chottodake_esper/)|火21|テレ朝|10/21放送開始|
+|[じゃあ、あんたが作ってみろよ](https://www.tbs.co.jp/antaga_tbs/)|火22|TBS|10/7放送開始|
+|[もしもこの世が舞台なら、楽屋はどこにあるのだろう](https://www.fujitv.co.jp/moshi_gaku/)|水22|フジ|10/1放送開始|
+|[緊急取調室](https://www.tv-asahi.co.jp/kintori/)|木21|テレ朝|10/16放送開始|
+
 ## 2025/07-09 season
 
 |title|on-air datetime|Broadcaster|comments|
@@ -7,7 +17,6 @@
 |[僕達はまだその星の校則を知らない](https://www.ktv.jp/bokuhoshi/)|月22|フジ|7/14放送開始|
 |[最後の鑑定人](https://www.fujitv.co.jp/saigonokanteinin/)|水22|フジ|7/9放送開始|
 |[しあわせな結婚](https://www.tv-asahi.co.jp/shiawasena-kekkon/)|木21|テレ朝|7/17放送開始|
-|[ひとりでしにたい](https://www.nhk.jp/p/hitorideshinitai/)|土22|NHK|6/21放送開始|
 |[19番目のカルテ](https://www.tbs.co.jp/19karte_tbs/)|日21|TBS|7/13放送開始|
 
 ## 2025/04-06 season
