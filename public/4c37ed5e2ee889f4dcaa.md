@@ -6,7 +6,7 @@ tags:
 private: true
 updated_at: '2025-12-15T22:01:54+09:00'
 id: 4c37ed5e2ee889f4dcaa
-organization_url_name: null
+organization_url_name: access
 slide: false
 ignorePublish: false
 ---
