@@ -1,11 +1,10 @@
 ---
 title: テストの前提条件の準備と前処理は区別して記述してるよ
 tags:
-  - test
-  - testing
-  - playwright
+  - テスト
+  - Playwright
 private: true
-updated_at: '2025-12-15T22:01:44+09:00'
+updated_at: '2025-12-15T22:01:54+09:00'
 id: 4c37ed5e2ee889f4dcaa
 organization_url_name: null
 slide: false
