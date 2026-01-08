@@ -25,7 +25,7 @@ math: katex
 
 # リンク
 
-このテンプレートは[aYukiYoshida/marp-template](https://github.com/aYukiYoshida/marp-template)のリポジトリで管理しています。
+このスライドは[aYukiYoshida/tips](https://github.com/aYukiYoshida/tips)のリポジトリで管理しています。
 
 # リスト
 
@@ -106,10 +106,10 @@ math: katex
 # 画像
 
 :::c
-![height:300](./images/marp.png)
+![height:300](sample/images/marp.png)
 
 ```markdown
-![height:300](./images/marp.png)
+![height:300](sample/images/marp.png)
 ```
 
 :::
