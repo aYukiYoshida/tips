@@ -16,8 +16,16 @@ depends = ["setup:*"]
 run = "npm run create:zenn"
 [tasks."create:qiita"]
 run = "npm run create:qiita"
+[tasks."build:docs"]
+description = "Build documentation with MkDocs"
+run = "poetry run task build-docs"
 [tasks."build:slides"]
+description = "Build slides with Marp"
 run = "npm run build:slides"
+[tasks."build:site"]
+description = "Build entire site (docs and slides)"
+run = "mv out site/slides"
+depends = ["build:{slides,docs}"]
 [tasks."preview:docs"]
 run = "poetry run task preview-docs"
 [tasks."preview:slides"]
