@@ -77,6 +77,20 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
   poetry run mkdocs -h
   ```
 
+### for Marp
+
+- Start the live-reloading slides server
+
+  ```shell
+  mise run preview:slides
+  ```
+
+- Build the slides
+
+  ```shell
+  mise run build:slides
+  ```
+
 ### for Zenn
 
 - Create a new project (only at first time; not required)
@@ -158,6 +172,8 @@ public        # Articles for Qiita
 
 - MkDocs
   - <https://www.mkdocs.org/>
+- Marp
+  - <https://marp.app/>
 - Zenn
   - [GitHubリポジトリでZennのコンテンツを管理する](https://zenn.dev/zenn/articles/connect-to-github)
   - [Markdown記法](https://zenn.dev/zenn/articles/markdown-guide)

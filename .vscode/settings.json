@@ -1,0 +1,61 @@
+{
+    "cSpell.words": [
+        "Appium",
+        "Automator",
+        "Cohn",
+        "colab",
+        "Colaboratory",
+        "etree",
+        "fromstring",
+        "googlecolaboratory",
+        "JNLP",
+        "marp",
+        "mkdocs",
+        "pydantic",
+        "pyenv",
+        "TECHSCORE",
+        "Testla",
+        "Zenn",
+        "enduml",
+        "kroki",
+        "Marp",
+        "marprc",
+        "startuml"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#3016f8",
+        "activityBar.background": "#3016f8",
+        "activityBar.foreground": "#d5dce3",
+        "activityBar.inactiveForeground": "#d5dce399",
+        "activityBarBadge.background": "#ff0000",
+        "activityBarBadge.foreground": "#d5dce3",
+        "commandCenter.border": "#d5dce3",
+        "sash.hoverBorder": "#3016f8",
+        "statusBar.background": "#3016f8",
+        "statusBar.foreground": "#d5dce3",
+        "statusBarItem.hoverBackground": "#3016f8",
+        "statusBarItem.remoteBackground": "#3016f8",
+        "statusBarItem.remoteForeground": "#d5dce3",
+        "titleBar.activeBackground": "#3016f8",
+        "titleBar.activeForeground": "#d5dce3",
+        "titleBar.inactiveBackground": "#3016f899",
+        "titleBar.inactiveForeground": "#d5dce3"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "markdown.marp.themes": [
+        "themes/global.css",
+        "themes/utility.css"
+    ],
+    "markdown.marp.html": "default",
+    "markdownlint.config": {
+        "MD025": false,
+        "MD033": false
+    }
+}
