@@ -1,0 +1,90 @@
+name: deploy-pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**/*'
+      - 'mkdocs.yml'
+      - 'slides/**/*'
+      - '.marprc.yml'
+      - 'scripts/engine.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: "22.x"
+  PYTHON_VERSION: "3.10"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email actions@github.com
+
+      - name: Checkout main branch in repository
+        uses: actions/checkout@v5
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'poetry'
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Install dependencies for Python
+        run: |
+          poetry install --no-root
+
+      - name: Build documentation
+        run: |
+          poetry run task build-docs
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies for Node.js
+        run: npm install
+
+      - name: Build slides
+        run: |
+          npm run build:slides &&
+          mv out site/slides
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: 'site'
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
