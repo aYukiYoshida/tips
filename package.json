@@ -7,9 +7,13 @@
     "doc": "docs"
   },
   "scripts": {
+    "prebuild:slides": "rimraf --glob out",
+    "build:slides": "marp --config .marprc.yml -I slides/src -o out",
+    "postbuild:slides": "node scripts/assets.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "preview:zenn": "zenn preview --port 3000",
     "preview:qiita": "qiita preview",
+    "preview:slides": "marp slides/src --config .marprc.yml --server",
     "create:zenn": "zenn new:article",
     "create:qiita": "qiita new"
   },
@@ -26,6 +30,16 @@
   "homepage": "https://github.com/aYukiYoshida/tips#readme",
   "dependencies": {
     "@qiita/qiita-cli": "^1.4.1",
-    "zenn-cli": "^0.2.10"
+    "zenn-cli": "^0.2.10",
+    "@kazumatu981/markdown-it-kroki": "^1.3.6",
+    "@marp-team/marp-cli": "^4.2.3",
+    "@marp-team/marp-core": "^4.2.0",
+    "commander": "^14.0.2",
+    "markdown-it-attrs": "^4.3.1",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-ins": "^4.0.0",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-prism": "^2.3.1",
+    "rimraf": "^6.0.1"
   }
 }
