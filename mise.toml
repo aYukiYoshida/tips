@@ -16,8 +16,12 @@ depends = ["setup:*"]
 run = "npm run create:zenn"
 [tasks."create:qiita"]
 run = "npm run create:qiita"
+[tasks."build:slides"]
+run = "npm run build:slides"
 [tasks."preview:docs"]
 run = "poetry run task preview-docs"
+[tasks."preview:slides"]
+run = "npm run preview:slides"
 [tasks."preview:zenn"]
 run = "npm run preview:zenn"
 [tasks."preview:qiita"]
