@@ -1,0 +1,7 @@
+lang: ja
+theme: slides/themes/global.css
+themeSet: slides/themes/
+size: 16:9
+engine: scripts/engine.mjs
+allowLocalFiles: true
+html: false

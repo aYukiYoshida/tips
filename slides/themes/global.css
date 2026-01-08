@@ -1,0 +1,224 @@
+/* @theme global */
+@import "gaia";
+
+/* Custom theme affecting the entire slide */
+
+:root {
+  --main-theme: rgb(14, 131, 253);
+  --background-theme: rgb(239, 255, 255);
+  --background-code: rgba(50, 50, 50, 0.2);
+  --background-code-name: rgba(50, 50, 50, 0.2);
+  --dark: rgb(69, 90, 100);
+  --lead-h1-font-size: 50px;
+  --lead-h2-font-size: 30px;
+  --h1-font-size: 40px;
+  --h2-font-size: 30px;
+  --h3-font-size: 25px;
+  --h4-font-size: 20px;
+  --main-font-size: 25px;
+  --mini-font-size: 20px;
+  --header-footer-height: 50px;
+  --header-footer-font-size: 15px;
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --normal-border-radius: 5px;
+}
+
+section {
+  padding: 20px 40px 10px 40px;
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-normal);
+  font-family: "Noto Serif JP", sans-serif;
+}
+
+section *::selection {
+  background: rgba(2, 136, 209, 0.3);
+}
+
+section::after {
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+  color: var(--dark);
+  font-size: var(--header-footer-font-size);
+  height: var(--header-footer-height);
+}
+
+header {
+  width: 100%;
+  color: var(--dark);
+  font-size: var(--header-footer-font-size);
+  height: var(--header-footer-height);
+}
+
+footer {
+  width: 100%;
+  color: var(--dark);
+  text-align: left;
+  padding-bottom: 0;
+  font-size: var(--header-footer-font-size);
+  height: var(--header-footer-height);
+}
+
+section h1 {
+  font-size: var(--h1-font-size);
+  border-bottom: 2px solid var(--dark);
+  margin-bottom: 10px;
+}
+
+section h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+section h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+section h4 {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
+section p img {
+  display: block;
+  margin: 0 auto;
+  border-radius: var(--normal-border-radius);
+}
+
+section pre {
+  background-color: var(--background-theme);
+  border-radius: var(--normal-border-radius);
+  border: var(--dark) 1px solid;
+}
+
+section code.language-txt {
+  color: var(--dark);
+}
+
+section code {
+  color: var(--dark);
+  background-color: var(--background-code);
+  padding: 4px 4px 4px;
+  border-radius: var(--normal-border-radius);
+}
+
+section code[data-name] {
+  position: relative;
+  margin-top: 44px;
+  padding-top: 4px;
+}
+
+section code[data-name]::before {
+  position: absolute;
+  top: -44px;
+  left: 0;
+  padding: .25em .75em;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  content: attr(data-name);
+  font-size: .75em;
+  background: var(--background-code-name);
+}
+
+
+
+section ul,
+ol {
+  padding-left: 40px;
+}
+
+section.lead h1 {
+  font-size: var(--lead-h1-font-size);
+  margin: 0 auto 100px;
+  border: 0;
+}
+
+section.lead h2 {
+  font-size: var(--lead-h2-font-size);
+  margin: 0 auto 100px;
+}
+
+section.lead header {
+  display: none;
+}
+
+section.lead footer {
+  display: none;
+}
+
+section strong {
+  font-weight: var(--font-weight-bold);
+}
+
+section.toc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section table {
+  margin: 10px auto;
+}
+
+section table td img {
+  display: block;
+  margin: 0 auto;
+}
+
+section table th {
+  background-color: var(--background-theme);
+}
+
+blockquote {
+  border-top: 0.1em dashed var(--dark);
+  font-size: var(--mini-font-size);
+  width: 90%;
+  position: absolute;
+  bottom: var(--header-footer-height);
+  padding-left: 0px;
+}
+
+blockquote::before {
+  display: none;
+}
+
+blockquote::after {
+  display: none;
+}
+
+/* mark */
+mark {
+  color: inherit;
+  background-color: inherit;
+}
+
+/* code block */
+marp-pre {
+  border-radius: 8px;
+}
+:not(marp-pre) code {
+  border-radius: 8px;
+}
+
+/* link */
+a {
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+a:has(code) {
+  text-decoration-color: #2b2b2b;
+}
+
+section.invert a:has(code) {
+  text-decoration-color: #dedede;
+}
+
+@import "utility";
