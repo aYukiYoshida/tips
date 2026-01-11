@@ -1,5 +1,15 @@
 # DRAMA
 
+## 2026/01-03 season
+
+|title|on-air datetime|Broadcaster|comments|
+|:-|:-|:-|:-|
+|[おコメの女－国税局資料調査課・雑国室－](https://www.tv-asahi.co.jp/okome/)|木21|テレ朝|1/8放送開始|
+|[プロフェッショナル 保険調査員・天音蓮](https://www.fujitv.co.jp/professional/)|木22|フジ|1/8放送開始|
+|[元科捜研の主婦](https://www.tv-tokyo.co.jp/motokasouken/)|金21|テレ東|1/16放送開始|
+|[探偵さん、リュック開いてますよ](https://www.tv-asahi.co.jp/tanteisan/)|金23|テレ朝|1/9放送開始|
+|[パンダより恋が苦手な私たち](https://www.ntv.co.jp/pankoi/)|土21|日テレ|1/10放送開始|
+
 ## 2025/10-12 season
 
 |title|on-air datetime|Broadcaster|comments|
