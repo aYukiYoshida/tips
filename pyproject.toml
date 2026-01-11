@@ -22,8 +22,17 @@ pre-commit = "^4.5.1"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.taskipy.tasks]
-z2q = { cmd = "python ./scripts/z2q.py", help = "Convert article of Zenn to one of Qiita" }
-build-docs = { cmd = "mkdocs build", help = "Build documentation" }
-preview-docs = { cmd = "mkdocs serve", help = "Preview documentation" }
-deploy-docs = { cmd = "mkdocs gh-deploy", help = "Deploy documentation" }
+[tool.poe.executor]
+type = "poetry"
+
+[tool.poe.tasks.z2q]
+cmd = "python scripts/z2q.py"
+help = "Convert article for Zenn to that for Qiita"
+
+[tool.poe.tasks."build:docs"]
+cmd = "mkdocs build"
+help = "Build documentation with MkDocs"
+
+[tool.poe.tasks."preview:docs"]
+cmd = "mkdocs serve"
+help = "Preview documentation with MkDocs"

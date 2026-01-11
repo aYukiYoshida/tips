@@ -70,7 +70,7 @@ jobs:
           for file in ${files[@]}; do
             if [[ $file =~ ^articles/.*\.md$ ]]; then
               article_id=$(echo $file | sed -e 's/articles\/\(.*\)\.md/\1/')
-              poetry run task z2q $article_id
+              poetry run poe z2q $article_id
             fi
           done
 

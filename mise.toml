@@ -30,7 +30,7 @@ run = "npm run create:qiita"
 
 [tasks."build:docs"]
 description = "Build documentation with MkDocs"
-run = "poetry run task build-docs"
+run = "poe build:docs"
 
 [tasks."build:slides"]
 description = "Build slides with Marp"
@@ -42,7 +42,7 @@ run = "mv out site/slides"
 depends = ["build:{slides,docs}"]
 
 [tasks."preview:docs"]
-run = "poetry run task preview-docs"
+run = "poe preview:docs"
 
 [tasks."preview:slides"]
 run = "npm run preview:slides"
@@ -54,4 +54,4 @@ run = "npm run preview:zenn"
 run = "npm run preview:qiita"
 
 [tasks.z2q]
-run = "poetry run task z2q"
+run = "poe z2q"
