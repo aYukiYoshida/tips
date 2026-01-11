@@ -43,38 +43,18 @@
 
 ## Commands
 
-### for mkdocs
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-- Create a new project
-
-  ```shell
-  poetry run mkdocs new [dir-name]
-  ```
+### for MKDocs
 
 - Start the live-reloading docs server
 
   ```shell
-  poetry run mkdocs serve
+  mise run preview:docs
   ```
 
-- Build the documentation site.
+- Build the documentations
 
   ```shell
-  poetry run mkdocs build
-  ```
-
-- Deploy the built documentation site on Github Pages.
-
-  ```shell
-  poetry run mkdocs gh-deploy
-  ```
-
-- Print help message and exit.
-
-  ```shell
-  poetry run mkdocs -h
+  mise run build:docs
   ```
 
 ### for Marp
@@ -93,57 +73,45 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ### for Zenn
 
-- Create a new project (only at first time; not required)
-
-  ```shell
-  npx zenn init
-  ```
-
 - Create a new article
 
   ```shell
-  npx zenn new:article
+  mise run create:zenn
   ```
 
 - Start the live-reloading docs server
 
   ```shell
-  npx zenn preview --port 3000
+  mise run preview:zenn
   ```
 
 ### for Qiita
 
-The following commands for Qiita do not need to be executed manually because the articles of Qiita are managed by the GitHub Actions.
-These are provided for reference only.
-
-- Create a new project (only at first time; not required)
-
-  ```shell
-  npx qiita init
-  ```
-
 - Create a new article
 
   ```shell
-  npx qiita new <BASE_NAME>
+  mise run create:qiita <BASE_NAME>
   ```
 
 - Start the live-reloading docs server
 
   ```shell
-  npx qiita preview
+  mise run preview:qiita
   ```
 
 ## Project Layout
 
 ```text
-mkdocs.yml    # The configuration file.
-docs/         # Articles for MkDocs
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-articles      # Articles for Zenn
-books         # Books for Zenn
-public        # Articles for Qiita
+docs/             # Articles for MkDocs
+    index.md      # The documentation homepage.
+    ...           # Other markdown pages, images and other files.
+articles/         # Articles for Zenn
+books/            # Books for Zenn
+public/           # Articles for Qiita
+slides/           # Slides for Marp
+mkdocs.yml        # Configuration file for MkDocs
+.marprc.yml       # Configuration file for Marp
+qiita.config.json # Configuration file for Qiita CLI
 ```
 
 ## Sync Articles between Zenn and Qiita
