@@ -57,7 +57,7 @@ jobs:
 
       - name: Build documentation
         run: |
-          poetry run task build-docs
+          poetry run poe build:docs
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
