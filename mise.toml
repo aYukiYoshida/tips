@@ -1,3 +1,9 @@
+[env]
+_.path = [
+    "{{config_root}}/.venv/bin",
+    "{{config_root}}/node_modules/.bin",
+]
+
 [tools]
 python = "3.10"
 node = "22.18.0"
@@ -5,34 +11,47 @@ poetry = "1.8.2"
 
 [tasks."setup:nodejs"]
 run = "npm install"
+
 [tasks."setup:python"]
 run = "poetry install"
+
 [tasks."setup:pre-commit"]
 run = "poetry run pre-commit install"
 depends = ["setup:python"]
+
 [tasks.setup]
 depends = ["setup:*"]
+
 [tasks."create:zenn"]
 run = "npm run create:zenn"
+
 [tasks."create:qiita"]
 run = "npm run create:qiita"
+
 [tasks."build:docs"]
 description = "Build documentation with MkDocs"
-run = "poetry run task build-docs"
+run = "poe build:docs"
+
 [tasks."build:slides"]
 description = "Build slides with Marp"
 run = "npm run build:slides"
+
 [tasks."build:site"]
 description = "Build entire site (docs and slides)"
 run = "mv out site/slides"
 depends = ["build:{slides,docs}"]
+
 [tasks."preview:docs"]
-run = "poetry run task preview-docs"
+run = "poe preview:docs"
+
 [tasks."preview:slides"]
 run = "npm run preview:slides"
+
 [tasks."preview:zenn"]
 run = "npm run preview:zenn"
+
 [tasks."preview:qiita"]
 run = "npm run preview:qiita"
+
 [tasks.z2q]
-run = "poetry run task z2q"
+run = "poe z2q"
