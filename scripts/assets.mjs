@@ -4,7 +4,7 @@ import { Command } from "commander";
 
 const defaultAssets = ["images"];
 
-const srcDir = path.resolve("src");
+const srcDir = path.resolve("slides", "src");
 const outDir = path.resolve("out");
 const log = (message) => {
   console.log("[assets]", message);
@@ -48,7 +48,7 @@ const copyAssets = (assets) => {
 const main = () => {
   const program = new Command();
   program
-    .description("Copy static assets from each directory under src/ to directories with the same name under out/")
+    .description("Copy static assets from each directory under slides/src/ to directories with the same name under out/")
     .argument("[assets...]", "Asset directory names under each directory", defaultAssets)
     .action((assets) => {
       copyAssets(assets);
