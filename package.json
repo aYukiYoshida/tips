@@ -13,13 +13,7 @@
     "prebuild:docs": "rimraf --glob site",
     "build:docs": "mkdocs build -d site",
     "build:site": "failsafe build:docs build:slides",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preview:zenn": "zenn preview --port 3000",
-    "preview:qiita": "qiita preview",
-    "preview:docs": "mkdocs serve",
-    "preview:slides": "marp slides/src --config .marprc.yml --server",
-    "create:zenn": "zenn new:article",
-    "create:qiita": "qiita new"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
