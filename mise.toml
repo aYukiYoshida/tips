@@ -30,7 +30,7 @@ run = "npm run create:qiita"
 
 [tasks."build:docs"]
 description = "Build documentation with MkDocs"
-run = "poe build:docs"
+run = "npm run build:docs"
 
 [tasks."build:slides"]
 description = "Build slides with Marp"
@@ -38,11 +38,10 @@ run = "npm run build:slides"
 
 [tasks."build:site"]
 description = "Build entire site (docs and slides)"
-run = "mv out site/slides"
-depends = ["build:{slides,docs}"]
+run = "npm run build:site"
 
 [tasks."preview:docs"]
-run = "poe preview:docs"
+run = "npm run preview:docs"
 
 [tasks."preview:slides"]
 run = "npm run preview:slides"
