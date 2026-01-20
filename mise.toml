@@ -9,18 +9,25 @@ python = "3.10"
 node = "22.18.0"
 poetry = "1.8.2"
 
+[hooks]
+postinstall = ["mise run setup"]
+
 [tasks."setup:nodejs"]
 run = "npm install"
+hide = true
 
 [tasks."setup:python"]
 run = "poetry install"
+hide = true
 
 [tasks."setup:pre-commit"]
-run = "poetry run pre-commit install"
+run = "pre-commit install"
 depends = ["setup:python"]
+hide = true
 
 [tasks.setup]
 depends = ["setup:*"]
+hide = true
 
 [tasks."create:zenn"]
 run = "npm run create:zenn"

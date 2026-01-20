@@ -35,12 +35,6 @@
     mise install
     ```
 
-3. Install dependencies
-
-    ```shell
-    mise run setup
-    ```
-
 ## Commands
 
 ### for MKDocs
