@@ -2,10 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import { Command } from "commander";
 
-const defaultAssets = ["images"];
+const defaults = {
+  assets: ["images"],
+  srcDir: path.resolve("src"),
+  outDir: path.resolve("out"),
+};
 
-const srcDir = path.resolve("slides", "src");
-const outDir = path.resolve("out");
 const log = (message) => {
   console.log("[assets]", message);
 };
@@ -28,7 +30,7 @@ const getTopLevelDirectories = (dir=srcDir) => {
     .map((entry) => entry.name);
 };
 
-const copyAssets = (assets) => {
+const copyAssets = (srcDir, outDir, assets) => {
   const topLevelDirectories = getTopLevelDirectories(srcDir);
   for (const topLevelDirectory of topLevelDirectories) {
     for (const asset of assets) {
@@ -48,10 +50,12 @@ const copyAssets = (assets) => {
 const main = () => {
   const program = new Command();
   program
-    .description("Copy static assets from each directory under slides/src/ to directories with the same name under out/")
-    .argument("[assets...]", "Asset directory names under each directory", defaultAssets)
-    .action((assets) => {
-      copyAssets(assets);
+    .description("Copy static assets from each directory under <src> to directories with the same name under <out>.")
+    .option("-s, --src <src>", "source directory", defaults.srcDir)
+    .option("-o, --out <out>", "output directory", defaults.outDir)
+    .argument("[assets...]", "asset directories to copy", defaults.assets)
+    .action((assets, options) => {
+      copyAssets(options.src, options.out, assets);
     });
 
   program.parse(process.argv);

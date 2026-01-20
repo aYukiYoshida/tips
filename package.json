@@ -7,15 +7,13 @@
     "doc": "docs"
   },
   "scripts": {
-    "prebuild:slides": "rimraf --glob out",
-    "build:slides": "marp --config .marprc.yml -I slides/src -o out",
-    "postbuild:slides": "node scripts/assets.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preview:zenn": "zenn preview --port 3000",
-    "preview:qiita": "qiita preview",
-    "preview:slides": "marp slides/src --config .marprc.yml --server",
-    "create:zenn": "zenn new:article",
-    "create:qiita": "qiita new"
+    "prebuild:slides": "rimraf --glob site/slides",
+    "build:slides": "marp --config .marprc.yml -I slides/src -o site/slides",
+    "postbuild:slides": "node scripts/assets.mjs --src slides/src --out site/slides",
+    "prebuild:docs": "rimraf --glob site",
+    "build:docs": "mkdocs build -d site",
+    "build:site": "failsafe build:docs build:slides",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -39,6 +37,7 @@
     "markdown-it-ins": "^4.0.0",
     "markdown-it-mark": "^4.0.0",
     "markdown-it-prism": "^2.3.1",
+    "npm-failsafe": "^1.4.0",
     "rimraf": "^6.0.1",
     "zenn-cli": "^0.3.1"
   }

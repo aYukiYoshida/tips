@@ -55,10 +55,6 @@ jobs:
         run: |
           poetry install --no-root
 
-      - name: Build documentation
-        run: |
-          poetry run poe build:docs
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -68,10 +64,9 @@ jobs:
       - name: Install dependencies for Node.js
         run: npm install
 
-      - name: Build slides
+      - name: Build site
         run: |
-          npm run build:slides &&
-          mv out site/slides
+          npm run build:site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4

@@ -9,28 +9,37 @@ python = "3.10"
 node = "22.18.0"
 poetry = "1.8.2"
 
+[hooks]
+postinstall = ["mise run setup"]
+
 [tasks."setup:nodejs"]
 run = "npm install"
+hide = true
 
 [tasks."setup:python"]
 run = "poetry install"
+hide = true
 
 [tasks."setup:pre-commit"]
-run = "poetry run pre-commit install"
+run = "pre-commit install"
 depends = ["setup:python"]
+hide = true
 
 [tasks.setup]
 depends = ["setup:*"]
+hide = true
 
 [tasks."create:zenn"]
-run = "npm run create:zenn"
+description = "Create a new article for Zenn"
+run = "zenn new:article"
 
 [tasks."create:qiita"]
-run = "npm run create:qiita"
+description = "Create a new article for Qiita"
+run = "qiita new"
 
 [tasks."build:docs"]
 description = "Build documentation with MkDocs"
-run = "poe build:docs"
+run = "npm run build:docs"
 
 [tasks."build:slides"]
 description = "Build slides with Marp"
@@ -38,20 +47,24 @@ run = "npm run build:slides"
 
 [tasks."build:site"]
 description = "Build entire site (docs and slides)"
-run = "mv out site/slides"
-depends = ["build:{slides,docs}"]
+run = "npm run build:site"
 
 [tasks."preview:docs"]
-run = "poe preview:docs"
+description = "Preview documentation with MkDocs"
+run = "mkdocs serve"
 
 [tasks."preview:slides"]
-run = "npm run preview:slides"
+description = "Preview slides with Marp"
+run = "marp slides/src --config .marprc.yml --server"
 
 [tasks."preview:zenn"]
-run = "npm run preview:zenn"
+description = "Preview articles for Zenn"
+run = "zenn preview --port 3000"
 
 [tasks."preview:qiita"]
-run = "npm run preview:qiita"
+description = "Preview articles for Qiita"
+run = "qiita preview"
 
 [tasks.z2q]
-run = "poe z2q"
+description = "Convert article for Zenn to that for Qiita"
+run = "python scripts/z2q.py"
