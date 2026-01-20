@@ -50,8 +50,8 @@
         }
     },
     "markdown.marp.themes": [
-        "themes/global.css",
-        "themes/utility.css"
+        "slides/themes/global.css",
+        "slides/themes/utility.css"
     ],
     "markdown.marp.html": "default",
     "markdownlint.config": {
