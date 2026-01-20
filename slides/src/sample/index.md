@@ -106,10 +106,10 @@ math: katex
 # 画像
 
 :::c
-![height:300](sample/images/marp.png)
+![height:300](./images/marp.png)
 
 ```markdown
-![height:300](sample/images/marp.png)
+![height:300](./images/marp.png)
 ```
 
 :::
