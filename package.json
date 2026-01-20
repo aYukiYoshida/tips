@@ -11,7 +11,7 @@
     "build:slides": "marp --config .marprc.yml -I slides/src -o site/slides",
     "postbuild:slides": "node scripts/assets.mjs --src slides/src --out site/slides",
     "prebuild:docs": "rimraf --glob site",
-    "build:docs": "mkdocs build -d site",
+    "build:docs": "poetry run mkdocs build -d site",
     "build:site": "failsafe build:docs build:slides",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
